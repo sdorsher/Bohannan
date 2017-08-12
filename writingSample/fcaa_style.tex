@@ -1,0 +1,60 @@
+%%% auxiliary style file for FCAA journal, goes together with "fcaa.cls"
+
+%\usepackage{cropmark} % if you wont crop marks
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%%%%%%%%% page margins for FCAA, do not change %%%%%%%%%%
+ \textwidth  12.5cm \textheight 19cm
+ \topmargin 0in
+ \evensidemargin 1.3cm \oddsidemargin 1.3cm
+
+ \hoffset 0.71cm \voffset 2.10cm
+ \baselineskip=18pt
+ \parindent=18pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% theorem type environment %%%%%%%%%%%%%%%%%%
+\newtheoremstyle{theorem}% name
+  {15pt}          % space above
+  {15pt}  % space below
+  {\sl}  % bofy font
+  {\parindent}
+     % ident - empty=no indent,  \parindent= paragraph indent
+  {\sc}  % thm head font
+  {. }    % punctuation after thm head
+  { }    % space after thm head: `` ``=normal \newline=linebreak
+  {}     % thm head specification
+\theoremstyle{theorem}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+%%%% definition type environment %%%%%%%%%%%%%%
+\newtheoremstyle{defi}% name
+  {15pt}          % space above
+  {15pt}  % space below
+  {\rm}  % bofy font
+  {\parindent}     % ident - empty=no indent,  \parindent= paragraph indent
+  {\sc}  % thm head font
+  {. }    % punctuation after thm head
+  { }    % space after thm head: `` ``=normal \newline=linebreak
+  {}     % thm head specification
+\theoremstyle{defi}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+
+%%%% how to make proofs %%%%%%%%%%%%%%%%%
+ \def\proofname{\indent\rm P\ r\ o\ o\ f.}
+ \def\proofend{\hfill$\Box$}
+ % or the same:
+ \def\qed{\hfill$\Box$} % instead of \square
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

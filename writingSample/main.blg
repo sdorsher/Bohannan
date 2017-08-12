@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: model3-num-names.bst
+Database file #1: BohannanAbbrev.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 6 entries,
+            3138 wiz_defined-function locations,
+            704 strings with 6402 characters,
+and the built_in function-call counts, 4058 in all, are:
+= -- 282
+> -- 130
+< -- 3
++ -- 70
+- -- 34
+* -- 438
+:= -- 524
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 27
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 347
+empty$ -- 348
+format.name$ -- 54
+if$ -- 779
+int.to.chr$ -- 1
+int.to.str$ -- 7
+missing$ -- 66
+newline$ -- 47
+num.names$ -- 18
+pop$ -- 147
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 94
+stack$ -- 0
+substring$ -- 230
+swap$ -- 202
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 18
+width$ -- 0
+write$ -- 97

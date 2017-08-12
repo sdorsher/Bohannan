@@ -1,0 +1,64 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{\path{#1}}}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Book
+\bibitem[{Luo and Chen(2013)}]{Luo:13}
+\bibinfo{author}{Luo\xfnm[ Y.]}, \bibinfo{author}{Chen\xfnm[ Y.Q.]}.
+\newblock \bibinfo{title}{Fractional Order Motion Controls}.
+\newblock \bibinfo{address}{Chichester, West Sussex}: \bibinfo{publisher}{John
+  Wiley {\&} Sons}; \bibinfo{year}{2013}.
+%Type = Article
+\bibitem[{Bohannan(2008)}]{Bohannan:08}
+\bibinfo{author}{Bohannan\xfnm[ G.]}.
+\newblock \bibinfo{title}{Analog fractional order controller in temperature and
+  motor control applications}.
+\newblock \bibinfo{journal}{Journal of Vibration and Control}
+  \bibinfo{year}{2008};\bibinfo{volume}{14(9-10)}:\bibinfo{pages}{1487--1498}.
+%Type = Book
+\bibitem[{Monje et~al.(2010)Monje, Chen, Vinagre, Xue and Feliu}]{Monje:10}
+\bibinfo{author}{Monje\xfnm[ C.A.]}, \bibinfo{author}{Chen\xfnm[ Y.]},
+  \bibinfo{author}{Vinagre\xfnm[ B.M.]}, \bibinfo{author}{Xue\xfnm[ D.]},
+  \bibinfo{author}{Feliu\xfnm[ V.]}.
+\newblock \bibinfo{title}{Fractional-order Systems and Controls: Fundamentals
+  and Applications, {\rm{a monograph in the}} Advances in Industrial Control
+  \rm{Series}}.
+\newblock \bibinfo{address}{Berlin}: \bibinfo{publisher}{Springer};
+  \bibinfo{year}{2010}.
+%Type = Article
+\bibitem[{Chen et~al.(2004)Chen, Vinagre and Podlubny}]{Chen:04a}
+\bibinfo{author}{Chen\xfnm[ Y.Q.]}, \bibinfo{author}{Vinagre\xfnm[ B.M.]},
+  \bibinfo{author}{Podlubny\xfnm[ I.]}.
+\newblock \bibinfo{title}{Continued fraction expansion approaches to
+  discretizing fractional order derivatives -- an expository review}.
+\newblock \bibinfo{journal}{Nonlinear dynamics}
+  \bibinfo{year}{2004};\bibinfo{volume}{38}:\bibinfo{pages}{155--170}.
+%Type = Book
+\bibitem[{Oldham and Spanier(1974)}]{OldSpan:74}
+\bibinfo{author}{Oldham\xfnm[ K.]}, \bibinfo{author}{Spanier\xfnm[ J.]}.
+\newblock \bibinfo{title}{The Fractional Calculus}.
+\newblock \bibinfo{address}{New York}: \bibinfo{publisher}{Academic Press};
+  \bibinfo{year}{1974}.
+%Type = Book
+\bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling and
+  Flattery}]{Press:92}
+\bibinfo{author}{Press\xfnm[ W.H.]}, \bibinfo{author}{Teukolsky\xfnm[ S.A.]},
+  \bibinfo{author}{Vetterling\xfnm[ W.T.]}, \bibinfo{author}{Flattery\xfnm[
+  B.P.]}.
+\newblock \bibinfo{title}{Numerical Recipes in C: The art of Scientific
+  Computing}.
+\newblock \bibinfo{edition}{Second} ed.; \bibinfo{publisher}{Cambridge
+  University Press}; \bibinfo{year}{1992}.
+
+\end{thebibliography}

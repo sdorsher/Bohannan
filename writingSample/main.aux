@@ -1,0 +1,64 @@
+\relax 
+\citation{Luo:13}
+\citation{Bohannan:08}
+\citation{Monje:10}
+\Newlabel{Dorsher}{a}
+\Newlabel{Bohannan}{b}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{sec:intro}{{1}{1}}
+\citation{Chen:04a}
+\citation{OldSpan:74}
+\@writefile{toc}{\contentsline {paragraph}{Outline\\}{2}}
+\citation{Chen:04a}
+\citation{OldSpan:74}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Average Gr{\"u}nwald Algorithm}{3}}
+\newlabel{sec:algorithmDefn}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Modified Gr{\"u}nwald}{3}}
+\newlabel{simpleGrunwald}{{1}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let each division represent a single time step and each bar represent a bin, scaled such that the duration of a bin increases further back in time (toward the right). The value of the bin is the average of the input signal, the sine wave, at each point in time within that bin. There exists some oldest bin that responds sensitively to the input signal (the second bin for Figure\nobreakspace  {}a and the third bin for Figure\nobreakspace  {}b). Since the time step and binning structure are held fixed, at lower frequencies, the oldest sensitive bin moves to older times (to the right). This illustrates the sensitivity of short bins at recent times to high frequencies and the sensitivity of long bins in the more distant past to low frequencies. }}{4}}
+\newlabel{fig:freqScaling}{{1}{4}}
+\newlabel{wj}{{2}{5}}
+\newlabel{eqn:sumWk}{{3}{5}}
+\newlabel{eqn:Nh}{{4}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When the input data $x_0$ is read, virtual data elements with bin average values $X_k$ are shifted from the $k$th to the $(k+1)$th bin. The first $n-1$ bins are at capacity, but the $n$th bin gains one data point. The bin averages are updated to value $X_k^\prime $ through a weighted average.}}{6}}
+\newlabel{fig:binShifting}{{2}{6}}
+\newlabel{avgSimpleGrunwald}{{5}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Updating the average history}{6}}
+\newlabel{sec:shifting}{{2.2}{6}}
+\newlabel{eqn:updating}{{6}{7}}
+\newlabel{eqn:Wbar}{{7}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Computational efficiency}{7}}
+\newlabel{sec:computation}{{3}{7}}
+\newlabel{eqn:GrunwaldRecursion}{{8}{8}}
+\citation{Press:92}
+\newlabel{eqn:shift1}{{9}{9}}
+\newlabel{eqn:shift2}{{10}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Validation methods}{9}}
+\newlabel{sec:methods}{{4}{9}}
+\citation{Chen:04a}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Phases reconstructed through sinusoidal fits and phases approximated through single zero-crossings of a single frequency ($0.7924$ Hz) based upon Figure\nobreakspace  {}3\hbox {}, with an expected phase of $45^\circ $.}}{10}}
+\newlabel{tab:phaseRecon}{{1}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{10}}
+\newlabel{sec:bode}{{5}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Zero crossings of a $0.5$ order derivative of a sine wave input signal at long times relative to the period. From this the reconstructed phase can be verified using the knowledge that the frequency of this sine wave was $0.7924$ Hz. Reconstructed and zero-crossing phases are shown in Table\nobreakspace  {}1\hbox {}. In this plot, the duration was $10.0$ s and there were $1000$ time steps such that $\delta t=0.01$ s. There were 10 terms in the IIR and 10 bins in all binned Gr{\"u}nwald approximations. A variety of binning methods were used: truncated simple Gr{\"u}nwald (GL), linearly increasing bin sizes (LIN), bin sizes increasing as a square (SQ), exponentially increasing bin sizes (EXP), and bin sizes following a Fibonacci rule (FIB).}}{11}}
+\newlabel{fig:timeDomain}{{3}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{12}}
+\newlabel{conclusions}{{6}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Magnitude and phase as a function of frequency for 10 registers of binned (SQ10, EXP10, FIB10) or unbinned (GL10, IIR10) input signal history. GL is the full Gr{\"u}nwald calculation, for the entire input signal history prior to that time. For this figure, the duration was $10.0$ s, $N_t=10^4$, and $\delta t = 10^{-3}$ s.}}{13}}
+\newlabel{fig:bode10p05}{{4}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Bode plots for $20$ bins of input signal memory for $\alpha =0.5$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s.}}{14}}
+\newlabel{fig:bode20p05}{{5}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Bode plots for $20$ bins of input signal memory for $\alpha =0.3$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s. }}{15}}
+\newlabel{fig:bode20p03}{{6}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Bode plots for $20$ bins of input signal memory for $\alpha =-0.3$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s. }}{16}}
+\newlabel{fig:bode20m03}{{7}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Bode plots for $20$ bins of input signal memory for $\alpha =-0.5$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s. }}{17}}
+\newlabel{fig:bode20m05}{{8}{17}}
+\bibstyle{model3-num-names}
+\bibdata{BohannanAbbrev}
+\bibcite{Luo:13}{{1}{2013}{{Luo and Chen}}{{}}}
+\bibcite{Bohannan:08}{{2}{2008}{{Bohannan}}{{}}}
+\bibcite{Monje:10}{{3}{2010}{{Monje et~al.}}{{Monje, Chen, Vinagre, Xue and Feliu}}}
+\bibcite{Chen:04a}{{4}{2004}{{Chen et~al.}}{{Chen, Vinagre and Podlubny}}}
+\bibcite{OldSpan:74}{{5}{1974}{{Oldham and Spanier}}{{}}}
+\bibcite{Press:92}{{6}{1992}{{Press et~al.}}{{Press, Teukolsky, Vetterling and Flattery}}}
