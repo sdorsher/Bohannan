@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="binShifting.eps">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="400.23851"
+     inkscape:cy="527.08465"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 248.301,564.60489 0,-48.35126"
+       id="path2995"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 309.45293,564.60489 0,-48.35126"
+       id="path2997"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 370.60486,564.60489 -0.60547,-48.35126"
+       id="path2999"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 430.54586,564.60489 -0.60547,-48.35126"
+       id="path3001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 187.95798,515.89636 0,48.85059 121.78313,0"
+       id="path3071"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 369.88554,564.74695 60.89157,0 0,0 -0.74713,-0.3729"
+       id="path3073"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="letter-spacing:0.02px"
+       x="135.73863"
+       y="598.25476"
+       id="text3075"><tspan
+         sodipodi:role="line"
+         id="tspan3077"
+         x="135.73863"
+         y="598.25476" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:;baseline-shift:baseline"
+       x="138.2066"
+       y="598.25476"
+       id="text3079"><tspan
+         sodipodi:role="line"
+         id="tspan3081"
+         x="138.2066"
+         y="598.25476" /></text>
+    <text
+       xml:space="preserve"
+       x="211.88536"
+       y="577.67029"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3091"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="217.45071"
+       y="578.85059"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3093"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3158"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">0</tspan></text>
+    <text
+       xml:space="preserve"
+       x="218.87227"
+       y="573.85693"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3095"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3160"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="220.23335"
+       y="577.67029"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3097"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="274.11307"
+       y="578.62146"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3114"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3162"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="279.67838"
+       y="579.80176"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3116"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3164"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="281.09995"
+       y="574.80811"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3118"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3166"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="282.46103"
+       y="578.62146"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3120"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <g
+       id="g3135"
+       transform="matrix(0.60546463,0,0,0.60439076,108.46715,563.65241)">
+      <text
+         id="text3137"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve" />
+      <text
+         id="text3139"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="8.8500004"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3128">Updated average</tspan></text>
+      <text
+         id="text3141"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="64.5"
+         xml:space="preserve" />
+      <text
+         id="text3143"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="96.150002"
+         xml:space="preserve"> </text>
+      <text
+         id="text3145"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="99.150002"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3161"
+       transform="matrix(0.60546463,0,0,0.60439076,115.98967,571.59427)">
+      <text
+         id="text3163"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3130">signal history</tspan></text>
+      <text
+         id="text3165"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="73.650002"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3195"
+       transform="matrix(0.60546463,0,0,0.60439076,114.1449,488.95053)">
+      <text
+         id="text3197"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3120">Value of virtual</tspan></text>
+      <text
+         id="text3199"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="31.65"
+         xml:space="preserve"> </text>
+      <text
+         id="text3201"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="34.799999"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3118" /></text>
+      <text
+         id="text3203"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="85.050003"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3218"
+       transform="matrix(0.60546463,0,0,0.60439076,116.0412,497.06438)">
+      <text
+         id="text3220"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3116">data shifted</tspan></text>
+      <text
+         id="text3222"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="25.049999"
+         xml:space="preserve"> </text>
+      <text
+         id="text3224"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="28.200001"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3114" /></text>
+      <text
+         id="text3226"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="66.75"
+         xml:space="preserve"> </text>
+    </g>
+    <text
+       xml:space="preserve"
+       x="397.07761"
+       y="578.34332"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3243"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3170"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="402.64294"
+       y="579.52362"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3245"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3168"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">n</tspan></text>
+    <text
+       xml:space="preserve"
+       x="404.15521"
+       y="574.53003"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3247"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3172"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="405.5163"
+       y="578.34332"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3249"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 326.30319,536.77905 z"
+       id="path3260"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 328.91817,537.89777 z"
+       id="path3262"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3268"
+       transform="matrix(0.60546463,0,0,0.60439076,330.69596,526.99812)">
+      <text
+         id="text3270"
+         style="font-size:22.5px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="21.439659"
+         x="0"
+         xml:space="preserve">. . .</text>
+      <text
+         id="text3272"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="21.439659"
+         x="28.200001"
+         xml:space="preserve"> </text>
+    </g>
+    <text
+       xml:space="preserve"
+       x="206.78413"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3287"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3174"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">c</tspan></text>
+    <text
+       xml:space="preserve"
+       x="211.53282"
+       y="541.90021"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3289"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3176"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">0</tspan></text>
+    <text
+       xml:space="preserve"
+       x="212.95439"
+       y="536.90656"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3291"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3178"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="214.22475"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3293"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="216.13028"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3295"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3180"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">=</tspan></text>
+    <text
+       xml:space="preserve"
+       x="220.30424"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3297"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="222.20981"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3299"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3182"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">b</tspan></text>
+    <text
+       xml:space="preserve"
+       x="226.56526"
+       y="541.90021"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3301"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3184"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">0</tspan></text>
+    <text
+       xml:space="preserve"
+       x="229.1967"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3303"
+       transform="scale(1.000888,0.99911278)">  </text>
+    <text
+       xml:space="preserve"
+       x="233.00772"
+       y="540.71985"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3305"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="266.978"
+       y="541.0274"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3328"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3186"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">c</tspan></text>
+    <text
+       xml:space="preserve"
+       x="271.72668"
+       y="542.2077"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3330"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3188"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="273.14828"
+       y="537.21405"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3332"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3190"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="274.41861"
+       y="541.0274"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3334"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="276.32416"
+       y="541.0274"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3336"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3192"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">= b</tspan></text>
+    <text
+       xml:space="preserve"
+       x="287.96899"
+       y="542.2077"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3338"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3194"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="289.39056"
+       y="541.0274"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3340"
+       transform="scale(1.000888,0.99911278)">  </text>
+    <text
+       xml:space="preserve"
+       x="293.20163"
+       y="541.0274"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3342"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <g
+       id="g3361"
+       transform="matrix(0.60546463,0,0,0.60439076,114.51817,527.00776)">
+      <text
+         id="text3363"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3122">Updated</tspan></text>
+      <text
+         id="text3365"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="48.599998"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3378"
+       transform="matrix(0.60546463,0,0,0.60439076,112.03175,535.12977)">
+      <text
+         id="text3380"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3126" /></text>
+      <text
+         id="text3382"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="7.1999998"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3124">bin occupancy</tspan></text>
+      <text
+         id="text3384"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="79.949997"
+         xml:space="preserve"> </text>
+    </g>
+    <text
+       xml:space="preserve"
+       x="383.45734"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3400"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3196"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">c</tspan></text>
+    <text
+       xml:space="preserve"
+       x="388.20602"
+       y="543.03662"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3402"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3198"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">n</tspan></text>
+    <text
+       xml:space="preserve"
+       x="389.71835"
+       y="538.04297"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3404"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3200"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;font-size:6.00000002px">’</tspan></text>
+    <text
+       xml:space="preserve"
+       x="390.98868"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3406"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="392.89423"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3408"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3202"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">= c</tspan></text>
+    <text
+       xml:space="preserve"
+       x="403.72238"
+       y="543.03662"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3410"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3204"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">n</tspan></text>
+    <text
+       xml:space="preserve"
+       x="405.23471"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3412"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="407.14026"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3414"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3206"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">+ 1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="417.4845"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3416"
+       transform="scale(1.000888,0.99911278)">  </text>
+    <text
+       xml:space="preserve"
+       x="421.20483"
+       y="541.85626"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3418"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <g
+       id="g3439"
+       transform="matrix(0.60546463,0,0,0.60439076,116.27182,505.02567)">
+      <text
+         id="text3441"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve"><tspan
+           style="font-size:13.22472668px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan3112">into the bin</tspan></text>
+      <text
+         id="text3443"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="64.800003"
+         xml:space="preserve">   </text>
+      <text
+         id="text3445"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="74.099998"
+         xml:space="preserve"> </text>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459"
+       width="8.1344357"
+       height="11.111589"
+       x="177.40727"
+       y="503.53677" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-7"
+       width="8.1344357"
+       height="11.111589"
+       x="237.48582"
+       y="504.17154" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-4"
+       width="8.1344357"
+       height="11.111589"
+       x="298.28"
+       y="504.11081" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-0"
+       width="8.1344357"
+       height="11.111589"
+       x="359.29462"
+       y="503.68344" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 188.53861,506.52837 c 14.55279,-3.18218 17.54811,6.22848 17.55326,6.41053 l 0.42812,0"
+       id="path3500"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 200.95432,512.51153 c 5.13755,0.85474 5.9938,0.85474 5.9938,0.85474"
+       id="path3502"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 209.94502,506.95574 z"
+       id="path3504"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 206.87466,513.36627 0.42814,-4.70106 0,0 0,0 0,0"
+       id="path3506"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 249.74833,507.13734 c 14.55279,-3.18219 17.54811,6.22848 17.55326,6.41053 l 0.42812,0"
+       id="path3500-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 262.16404,513.1205 c 5.13755,0.85473 5.9938,0.85473 5.9938,0.85473"
+       id="path3502-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 271.15474,507.5647 z"
+       id="path3504-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 268.08438,513.97523 0.42813,-4.70105 0,0 0,0 0,0"
+       id="path3506-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 310.68945,507.91875 c 14.55277,-3.18218 17.54811,6.22848 17.55325,6.41053 l 0.42812,0"
+       id="path3500-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 323.10516,513.90191 c 5.13753,0.85474 5.9938,0.85474 5.9938,0.85474"
+       id="path3502-45"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 332.09584,508.34611 z"
+       id="path3504-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 329.0255,514.75665 0.42812,-4.70106 0,0 0,0 0,0"
+       id="path3506-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 370.98205,507.5647 c 14.55278,-3.18218 17.54812,6.22848 17.55326,6.41053 l 0.42812,0"
+       id="path3500-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 383.39777,513.54787 c 5.13753,0.85473 5.99379,0.85473 5.99379,0.85473"
+       id="path3502-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 392.38845,507.99207 z"
+       id="path3504-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.60492742;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 389.31811,514.4026 0.42812,-4.70105 0,0 0,0 0,0"
+       id="path3506-5"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       x="178.31329"
+       y="500.03799"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3567"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3134"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">x</tspan></text>
+    <text
+       xml:space="preserve"
+       x="181.94286"
+       y="501.21832"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3569"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3132"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">0</tspan></text>
+    <text
+       xml:space="preserve"
+       x="184.5743"
+       y="500.03799"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3571"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="238.52956"
+       y="500.45813"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3587"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3138"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="244.09488"
+       y="501.63846"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3589"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3136"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">0</tspan></text>
+    <text
+       xml:space="preserve"
+       x="245.51645"
+       y="500.45813"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3591"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="298.4877"
+       y="501.26468"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3607"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3140"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="304.05304"
+       y="502.44498"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3609"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3142"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="305.47464"
+       y="501.26468"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3611"
+       transform="scale(1.000888,0.99911278)"> </text>
+    <text
+       xml:space="preserve"
+       x="358.32263"
+       y="500.47485"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3627"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3144"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:8.00000003px">X</tspan></text>
+    <text
+       xml:space="preserve"
+       x="363.88797"
+       y="501.65515"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3629"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3154"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">n</tspan></text>
+    <text
+       xml:space="preserve"
+       x="366.61017"
+       y="501.65515"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3631"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3152"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">-</tspan></text>
+    <text
+       xml:space="preserve"
+       x="368.24347"
+       y="501.65515"
+       style="font-size:5.2628684px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3633"
+       transform="scale(1.000888,0.99911278)"><tspan
+         id="tspan3150"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:6.00000002px">1</tspan></text>
+    <text
+       xml:space="preserve"
+       x="369.66501"
+       y="500.47485"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3635"
+       transform="scale(1.000888,0.99911278)">   </text>
+    <text
+       xml:space="preserve"
+       x="375.38159"
+       y="500.47485"
+       style="font-size:8.34799862px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+       id="text3637"
+       transform="scale(1.000888,0.99911278)"> </text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+The technology most widely used today in digital fractional order circuitry is the continued fraction expansion (CFE) of the Tustin approximation to $s^\alpha$. Its benefits are that it was a flat phase response over approximately two and a half decades in phase for a 9th order expansion (10 registers of input signal memory). It would be desirable to find an algorithm with an even broader flat phase frequency bandwidth and with a comparably small amount of memory required. We take the Grunwald algorithm as a starting point. As the signal history retained in the Grunwald sum grows longer, the bandwidth of flat phase response grows broader; however, the memory required also increases with input signal history length. To reduce this memory requirement and retain a long signal history, we propose partitioning the input signal history into bins that are longer further into the past. Since the Grunwald weights decrease rapidly moving further back in time, the older and longer bins will sum together many small contributions, never exceeding the total from the more recent and shorter bins. The presence of short bins at recent times maintains sensitivity to high frequencies, while the inclusion of long bins at past times adds sensitivity to low frequencies that would not usually be present in a Grunwald sum with the same number of terms. 
+
+
+\subsubsection{Modified Grunwald}
+
+The Grunwald form of the fractional integral can be written
+
+\begin{equation}
+D^\alpha_tf(t) = \displaystyle \lim_{N\to\infty} \left(\frac{t}{N_t}\right)^{-\alpha}
+\displaystyle\sum\limits_{j=0}^{N_t-1} w_{j} f\left(t-\frac{j t}{N_t}\right)
+\label{simpleGrunwald}
+\end{equation}
+
+\noindent where $f(t)$ is the input signal at time $t$
+
+\begin{equation}
+w_{j} = \frac{\Gamma(j-\alpha)}{\Gamma(j+1)\Gamma(-\alpha)}
+\label{wj}
+\end{equation}
+
+\noindent We modify the Grunwald sum of Equation~\ref{simpleGrunwald} by partitioning its history into $N_b$ bins. In each bin $k$, the value of the input signal history $x_j=f\left(t-\frac{jt}{N_t}\right)$ is represented by its average, $X_k$.
+
+\begin{equation}
+D^\alpha_t = \displaystyle(\Delta t)^{-\alpha}\sum\limits_{k=0}^{N_b}\bar{W}_kX_k
+\label{avgSimpleGrunwald}
+\end{equation}
+
+\noindent where $\Delta t$ is the interval between time samples. Since we make the assumption that each value is well represented by its average within a bin, we can define a value for the "bin coefficient" by summing the Grunwald coefficients within that bin. 
+
+\begin{equation}
+W_k = \displaystyle\sum\limits_{j=p_{k-1}+1}^{p_k} w_j
+\label{sumWk}
+\end{equation}
+
+\noindent where $w_j$ is summed from the lowest index of the input data history within bin $k$ to the highest index $p_k$ within that bin. There is an additional factor that goes into $\bar{W}$ that will be discussed in Section~\ref{sec:shifting}.
+
+
+\subsubsection{Updating the average history}
+\label{sec:shifting}
+
+When a new input data element is read, the history is updated. The new data element is shifted into the first bin through a weighted average. Since data elements represent time steps, they should be incompressible-- when one element is shifted into a bin, another virtual element should be shifted out of that bin if the bin is full. It shifts into the next bin, and pushes a virtual element out of that one, until a bin which is partially full or empty is reached. To update the average data stored in the bins, we take the weighted average obtained by adding one virtual element from the $(k-1)$th bin to the $b_k$ elements in the $k$th bin. 
+
+During start-up, it will be necessary to consider bins that have some set size $b_k$, but are not filled to that capacity. In that case, it is the current occupation number $c_k$ of each bin that enters the calculation. If the $k$th bin initially contains $c_k$
+elements, updating the history either leaves $c_k$ 
+($c_k\prime=c_k=b_k$) or increments the number of elements in the bin such
+that $c_k\prime = c_k + 1$ if the bin is not yet at capacity. Either way, the updated average of the
+value of the $k$th bin, $X_k\prime$, is given by
+
+\begin{equation}
+X_k\prime = \frac{c_k\prime-1}{c_k\prime}X_k + \frac{1}{c_k\prime}X_{k-1}.
+\label{avgShiftReg}
+\end{equation}
+
+During start-up, these partially full bins may also factor into the Grunwald weights. To handle bins that are partially full, we weight the binned Grunwald weights by the ratio of the bin occupation number $c_k$ to its capacity $b_k$, 
+
+\begin{equation}
+\bar{W}_k= \frac{c_k W_k}{b_k}.
+\label{Wbar}
+\end{equation} 
+
+
+
+
+
+
+
+
+

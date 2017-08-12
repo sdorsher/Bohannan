@@ -1,0 +1,656 @@
+// FracDoc.cpp : implementation of the CFracDoc class
+//  and its fractional order operator classes
+//
+// Part of the validation of the fractional order state
+//  space model using the numerical technique of El-Mesiry,
+//  etal. 
+//
+#include "stdafx.h"
+#include "Fractional.h"
+#include "MainFrm.h"
+#include "FracDoc.h"
+#include "math.h"
+
+#include "nrutil.h"
+#include "stdio.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+// FractOp
+// Implements the Fractional Order Operator
+// Used to designate the order of the operator
+//  and the multiplication factor used in 
+//  FOC state space matrices
+
+FractOp::FractOp()
+{
+	multiplier = 1.0;
+	order = 0.0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Fractance
+// Implements signal history arrays
+// These allow application of Fractional Order Operators (FractOp)
+//  to give back current values of the derivatives.
+
+Fractance::Fractance()
+{
+
+}
+
+Fractance::Fractance(UINT size)
+{
+	history.SetSize(size);
+}
+
+Fractance::~Fractance()
+{
+	history.RemoveAll();
+}
+
+double Fractance::PartSum(UINT n, double order)
+{
+	double Num, Den, PS;
+	Num = n-order-1;
+	Den = n;
+	PS = history[1];
+	for(int i=1;i<(n-1);i++) PS = history[i+1] + PS*(Num-i)/(Den-i);
+	PS = PS*(-order);		//avoid adding x[n]
+	return PS;
+}
+
+double Fractance::FractDeriv(UINT n, double order)
+{
+	double Num, Den, PS;
+	Num = n-order-1;
+	Den = n;
+	PS = history[1];
+	for(int i=1;i<n;i++) PS = history[i+1] + PS*(Num-i)/(Den-i);
+	return PS;
+
+}
+
+double& Fractance::operator [] (int index)
+{
+	return history[index];
+}
+
+void Fractance::RemoveAll()
+{
+	history.RemoveAll();
+}
+
+void Fractance::SetSize(UINT size)
+{
+	history.SetSize(size);
+}
+
+
+// Case II with six independent parameters.
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc
+
+IMPLEMENT_DYNCREATE(CFracDoc, CDocument)
+
+BEGIN_MESSAGE_MAP(CFracDoc, CDocument)
+	//{{AFX_MSG_MAP(CFracDoc)
+	ON_COMMAND(ID_OPERATION_RUN, OnOperationRun)
+	ON_COMMAND(ID_OPERATION_SETUP, OnOperationSetup)
+	ON_UPDATE_COMMAND_UI(ID_OPERATION_SETUP, OnUpdateOperationSetup)
+	ON_UPDATE_COMMAND_UI(ID_OPERATION_RUN, OnUpdateOperationRun)
+	ON_COMMAND(ID_FILE_SAVETIMESERIES, OnFileSavetimeseries)
+	ON_UPDATE_COMMAND_UI(ID_FILE_SAVETIMESERIES, OnUpdateFileSavetimeseries)
+	ON_COMMAND(ID_OPERATIONS_MEASUREMENTSETUP, OnOperationsMeasurementSetUp)
+	ON_UPDATE_COMMAND_UI(ID_OPERATIONS_MEASUREMENTSETUP, OnUpdateOperationsMeasurementSetUp)
+	ON_COMMAND(ID_OPERATIONS_MEASURE, OnOperationsMeasure)
+	ON_UPDATE_COMMAND_UI(ID_OPERATIONS_MEASURE, OnUpdateOperationsMeasure)
+	ON_UPDATE_COMMAND_UI(ID_FILE_NEW, OnUpdateFileNew)
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc construction/destruction
+
+CFracDoc::CFracDoc()
+{
+// Establish the default values
+	alpha = 0.5436;	// default exponent
+	N = 20000;		// default num of steps
+	T = 0.02;		// default duration (msec)
+	dt = T/N;		// the time step
+	y0 = 0.0;		// no inital position
+	K = 17.27;		// Default Fractor impedance (kOhm)
+	tau = 0.01592;	// impedance time scale (msec)
+	RI = 10.0;		// Default circuit resistance (kOhm)
+	L = 0.022;		// Inductance (H)
+
+// set up default noise source
+	fcn = &CNoise::gasdev;
+	order = 2.0;
+	sigma = 0.0;
+	prn.SetAlpha(2.0);
+	b_Efld_noise = FALSE;
+	b_Pol_noise = FALSE;
+	
+	delay_index = N/2;
+	capture_index = N/4;
+	delay = dt*delay_index;
+	capture = dt*capture_index;
+
+	b_measured = FALSE;
+	epsilon[0] = 0.0;
+	epsilon[1] = 0.0;
+
+	ac_On = FALSE;
+	VG = 0.2;			// default amplitude
+	Period = TwoPI;		// default period
+	frequency = 1000.0;
+	omega = TwoPI*frequency;
+
+	Pulsed_On = TRUE;
+	step_amplitude = VG;
+	step_frequency = 3.0;
+	P_Period = 1.0 / step_frequency;
+	P_duty_cycle = 0.5;		// 50% duty cycle
+	bipolar = TRUE;
+
+	gated = FALSE;			// Add the inputs
+	
+	b_run = FALSE;			// indicate no valid data for drawing
+	bPauseFlag = false;		// not paused
+	bStopFlag = false;		// not stopped
+	b_In_Progress = FALSE;
+	b_newData =FALSE;
+	ElapsedTime = 0;
+	Version = "3.0 - Direct";
+}
+
+CFracDoc::~CFracDoc()
+{
+
+}
+
+void CFracDoc::InitDocument()
+{
+	app = (CFracApp*)AfxGetApp();
+	m_sizeDoc = CSize(7000,9000);
+	//default sizes for parameters
+}
+
+BOOL CFracDoc::OnNewDocument()
+{
+	if (!CDocument::OnNewDocument())
+		return FALSE;
+
+	InitDocument();
+
+	return TRUE;
+}
+
+BOOL CFracDoc::OnOpenDocument(const char* pszPathName)
+{
+	if(!CDocument::OnOpenDocument(pszPathName))
+		return FALSE;
+	InitDocument();
+	return TRUE;
+}
+
+void CFracDoc::DeleteContents()
+{
+	b_run = FALSE;
+	b_measured = FALSE;
+	epsilon[0] = 0.0;
+	epsilon[1] = 0.0;
+
+	X[0].RemoveAll();
+	X[1].RemoveAll();
+	X[2].RemoveAll();
+	X[3].RemoveAll();
+	ComplexData.RemoveAll();
+	FreqArray.RemoveAll();
+	PSDArray1.RemoveAll();
+	PSDArray2.RemoveAll();
+	nNumSamples = 0;
+	nNumPTSamples = 0;
+	nNumSPECSamples = 0;
+
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc serialization
+
+void CFracDoc::Serialize(CArchive& ar)
+{
+	if (ar.IsStoring())
+	{
+		ar << N << T << dt << y0;
+		ar << alpha << K << order;
+		ar << ac_On << VG << frequency << omega << Period;
+		ar << Pulsed_On << step_frequency << step_amplitude << P_Period;
+		ar << gated << delay << delay_index << capture << capture_index;
+	}
+	else
+	{
+		ar >> N >> T >> dt >> y0;
+		ar >> alpha >> K >> order;
+		ar << ac_On >> VG >> frequency >> omega >> Period;
+		ar >> Pulsed_On >> step_frequency >> step_amplitude >> P_Period;
+		ar >> gated >> delay >> delay_index >> capture >> capture_index;
+		b_run = FALSE;
+		b_measured = FALSE;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc File Handlers
+
+void CFracDoc::OnFileSavetimeseries() 
+{
+	CString sz;
+	CStdioFile	timeFile;
+	CFileDialog	fdlg(FALSE, ".dat", GetTitle(), OFN_HIDEREADONLY |
+		OFN_OVERWRITEPROMPT, szTimeFilter, NULL);
+	if(fdlg.DoModal() == IDOK)
+	{
+		mFileName = fdlg.GetPathName();
+		if(!timeFile.Open(mFileName, CFile::modeReadWrite |
+			CFile::modeCreate, &mfileException))
+		{
+			TRACE("Can't open file %s, error = #u\n",mFileName,
+				mfileException.m_cause);
+			return;
+		}
+		SetTitle(fdlg.GetFileTitle());
+		sz.Format("%g\t%g\t%g\t%g\n",alpha,K,order,dt);
+		timeFile.WriteString(sz);
+		for(int k = 16250;k<=18750;k++)
+		{
+			sz.Format("%g,%g,%g,%g,%g\n",k*dt,X[0][k],X[1][k],X[2][k],X[3][k]);
+			timeFile.WriteString(sz);
+		}
+	}
+}
+
+void CFracDoc::OnUpdateFileSavetimeseries(CCmdUI* pCmdUI) 
+{
+	if(b_run) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc diagnostics
+
+#ifdef _DEBUG
+void CFracDoc::AssertValid() const
+{
+	CDocument::AssertValid();
+}
+
+void CFracDoc::Dump(CDumpContext& dc) const
+{
+	CDocument::Dump(dc);
+}
+#endif //_DEBUG
+
+/////////////////////////////////////////////////////////////////////////////
+// CFracDoc commands
+
+void CFracDoc::OnOperationRun() 
+{
+	if(b_In_Progress) return;
+	b_In_Progress = TRUE;
+	b_run = FALSE;
+	b_measured = FALSE;
+
+	CMainFrame* pFrmWnd = (CMainFrame*) AfxGetMainWnd();
+	pFrmWnd->m_wndStatusBar.SetPaneText(0,"Running");
+	pFrmWnd->m_wndStatusBar.SetPaneText(1,"Field");
+	StartTime = CTime::GetCurrentTime();
+//	cntr = 0;
+
+// clear out any old data arrays
+	ResetSpectralData();
+
+// build working arrays
+	X[0].SetSize(N+1);
+	X[1].SetSize(N+1);
+	X[2].SetSize(N+1);
+	X[3].SetSize(N+1);
+	
+// Generate the Input voltage signal
+
+	for(int n=0;n<=N;n++) X[0][n] = 0.0;
+	if(Pulsed_On && ac_On && gated) {
+		for(n=1;n<=N;n++) {
+			if(fmod(n*dt,P_Period)<(0.5*P_Period)) X[0][n] = VG*sin(n*dt*omega);
+			else X[0][n] = 0.0;
+		}
+	}
+	if(Pulsed_On && !gated) for(n=1;n<=N;n++) {
+		if(fmod(n*dt,P_Period)<(P_duty_cycle*P_Period)) X[0][n] = VG;
+		else 
+		if(bipolar)	X[0][n] = -VG; //(-step_amplitude);
+		else X[0][n] = 0.0;
+	}
+
+	if(ac_On && !gated) for(n=1;n<=N;n++) 
+		X[0][n] += VG*sin(n*dt*omega);
+
+
+	if(b_Efld_noise) for(n=0;n<=N;n++) 
+		X[0][n] += sigma*(prn.*fcn)();
+
+// Generate the constants
+
+	pFrmWnd->m_wndStatusBar.SetPaneText(1,"Input");
+	PumpMessages();
+	PreFactor = (K/RI)*(pow((dt/tau),alpha));
+	Multiplier = (1.0)/(1.0 + PreFactor);
+
+	pFrmWnd->m_wndStatusBar.SetPaneText(1,"Output");
+	PumpMessages();
+
+// Calculate the current, with and without noise.
+// From the history of the current, calculate the voltage
+// This scheme uses the self-consistency method of direct integration
+
+	if(b_Pol_noise)
+	{
+		CURRENT[0] = 0.0;
+		VOUT[0] = 0.0;
+		CURRENT[1] = Multiplier*(VIN[1]/RI);
+		VOUT[1] = PreFactor*X[2][1];
+		CURRENT[2] = Multiplier*(VIN[2]/RI - PreFactor*(alpha*CURRENT[1]));
+		VOUT[2] = PreFactor*CURRENT[1];
+		for(n=2;n<N;n++) 
+		{
+			double History = PreFactor*X[2].PartSum(n+1,-alpha);
+			X[2][n+1] = Multiplier*(X[0][n+1]/RI - History 
+				+ sigma*(prn.*fcn)());
+			X[1][n+1] = PreFactor*X[2][n+1] + History;
+		}
+	}
+	else
+	{
+		X[2][0] = 0.0;
+		X[1][0] = 0.0;
+		X[2][1] = Multiplier*(X[0][1]/RI);
+		X[1][1] = PreFactor*X[2][1];
+		X[2][2] = Multiplier*(X[0][2]/RI - PreFactor*(alpha*X[2][1]));
+		X[1][2] = PreFactor*X[2][1];
+		for(n=2;n<N;n++) 
+		{
+			double History = PreFactor*X[2].PartSum(n+1,-alpha);
+			X[2][n+1] = Multiplier*(X[0][n+1]/RI - History);
+			X[1][n+1] = PreFactor*X[2][n+1] + History;
+		}
+
+	}
+
+	pFrmWnd->m_wndStatusBar.SetPaneText(1,"Integral");
+	PumpMessages();
+
+	// Compute the fractional order integral
+	INTEGRAL[0] = 0.0;
+	INTEGRAL[1] = PreFactor*alpha*VIN[1];
+	for(n=1;n<=N;n++)
+		INTEGRAL[n] = PreFactor*VIN.FractDeriv(n,-alpha);
+
+
+	EndTime = CTime::GetCurrentTime();
+	ElapsedTime = EndTime - StartTime;
+	
+	pFrmWnd->m_wndStatusBar.SetPaneText(0,"Ready");
+	pFrmWnd->m_wndStatusBar.SetPaneText(1,"");
+	b_newData = TRUE;
+	b_run = TRUE;
+	b_In_Progress = FALSE;
+	UpdateAllViews(NULL);
+}
+
+void CFracDoc::OnOperationsMeasure() 
+{
+	if(!b_run || Pulsed_On) return;
+
+	// first check if the measurement delay and capture times 
+	// are compatible
+	if( (delay_index+capture_index)>N )
+	{
+		AfxMessageBox("Outside Limits",MB_OK);
+		OnOperationsMeasurementSetUp();
+	}
+	if( (delay_index+capture_index)>N )
+	{
+		delay_index = N/2;
+		capture_index = N/4;
+	}
+	delay = delay_index*dt;
+	capture = capture_index*dt;
+
+	// then calculate the sin and cos components
+//	SineFit(frequency, dt, delay_index, capture_index, X[2], epsilon);
+	b_measured = TRUE;
+	UpdateAllViews(NULL);
+}
+
+
+////////////////////////////////
+// Event handlers
+
+void CFracDoc::OnOperationSetup() 
+{
+	if(b_In_Progress) return;
+	pDlg.m_Duration = T;
+	pDlg.m_Exponent = alpha;
+	pDlg.m_Gain = K;
+	pDlg.m_RI = RI;
+	pDlg.m_L = L;
+	pDlg.m_P_Zero = y0;
+	pDlg.m_Num_Intervals = N;
+	pDlg.m_Frequency = frequency;
+	pDlg.m_Fld_Amplitude = VG;
+	pDlg.m_Tau = tau;
+	pDlg.m_AC_ON = ac_On;
+	pDlg.m_PULSED_ON = Pulsed_On;
+	pDlg.m_Step_Amplitude = step_amplitude;
+	pDlg.m_Step_Frequency = step_frequency;
+	pDlg.m_Duty_Cycle = 100.0*P_duty_cycle;
+	pDlg.m_Gated = gated;
+	pDlg.m_Bipolar = bipolar;
+	pDlg.m_Noise_Order = order;
+	pDlg.m_Sigma = sigma;
+	pDlg.m_Polar = b_Pol_noise;
+	pDlg.m_E_Fld = b_Efld_noise;
+
+	if(pDlg.DoModal() == IDOK)
+	{
+		T = pDlg.m_Duration;
+		alpha = pDlg.m_Exponent;
+		K = pDlg.m_Gain;
+		RI = pDlg.m_RI;
+		L = pDlg.m_L;
+		y0 = pDlg.m_P_Zero;
+		N = pDlg.m_Num_Intervals;
+		frequency = pDlg.m_Frequency;
+		VG = pDlg.m_Fld_Amplitude;
+		tau = pDlg.m_Tau;
+		omega = TwoPI*frequency;
+		Period = 1.0/frequency;
+		order = pDlg.m_Noise_Order;
+		sigma = pDlg.m_Sigma;
+		b_Pol_noise = pDlg.m_Polar;
+		b_Efld_noise = pDlg.m_E_Fld;
+
+// pick the appropriate random number algorithm
+		if(order == 0.0) fcn = &CNoise::ran2;
+		else if(order == 2.0) fcn = &CNoise::gasdev;
+		else if(order == 1.0) fcn = &CNoise::cauchy;
+		else fcn = &CNoise::aStable;
+		prn.SetAlpha(order);
+
+// Establish the driving fucntion
+		ac_On = pDlg.m_AC_ON;
+		Pulsed_On = pDlg.m_PULSED_ON;
+		step_amplitude = pDlg.m_Step_Amplitude;
+		step_frequency = pDlg.m_Step_Frequency;
+		P_duty_cycle = 0.01*pDlg.m_Duty_Cycle;
+		gated = pDlg.m_Gated && Pulsed_On && ac_On;
+		bipolar = pDlg.m_Bipolar;
+		P_Period = 1.0 / step_frequency;
+
+		N = (N < 4) ? 4 : N;
+		dt = T/N;
+		b_run = FALSE;
+		ResetSpectralData();
+		UpdateAllViews(NULL);
+	}
+}
+
+void CFracDoc::OnOperationsMeasurementSetUp()
+{
+	mDlg.m_Delay = delay;
+	mDlg.m_Capture = capture;
+	if(mDlg.DoModal() == IDOK)
+	{
+		delay = mDlg.m_Delay;
+		delay_index = (int) (delay/dt);
+		capture = mDlg.m_Capture;
+		capture_index = (int) (capture/dt);
+	}	
+}
+
+void CFracDoc::ComputeSpectrum()
+{
+	if(!b_run) return;
+
+// calculate the number of points available between the delay
+// marker and the end of the sample set.
+	if( (delay_index+capture_index) > N )
+	{
+		AfxMessageBox("Outside Limits",MB_OK);
+		OnOperationsMeasurementSetUp();
+	}
+	if( (delay_index+capture_index)>N )
+	{
+		delay_index = N/2;
+		capture_index = N/4;
+	}
+	delay = delay_index*dt;
+	capture = capture_index*dt;
+
+	UINT NN = N - delay_index;
+
+// Make NN a power of 2
+	int m = 0;
+	while(NN>1)
+	{
+		NN = NN>>1;
+		m++;
+	}
+	NN = NN<<m;
+
+	UINT M2 = NN/2;
+
+	ComplexData.SetSize(NN+1);
+	FreqArray.SetSize(NN+1);
+	PSDArray1.SetSize(NN+1);
+	PSDArray2.SetSize(NN+1);
+	
+	double ave = 0.0;
+	for(int j = 0;j<NN; j++) ave += X[1][delay_index+j];
+	ave = ave/(double) NN;
+	double Wss = 0.0;
+	for(int k=0;k<NN;k++)
+	{
+		double wi = 0.5f*(1.0f-cos(2.0f*PI*k/(double)NN));
+		Wss += wi*wi;
+		ComplexData[k] = wi*COMPLEX(X[0][delay_index+k],(X[1][delay_index+k]-ave));
+	}
+// compute the transform for both signals
+	cfft(ComplexData,NN,1);
+
+// uncouple the fft of the field from the polarization
+	for(UINT i=1;i<=(M2-1);i++)
+	{
+		COMPLEX XX = 0.5*(ComplexData[i]+conj(ComplexData[NN-i]));
+		COMPLEX YY = 0.5*(ComplexData[i]-conj(ComplexData[NN-i]));
+		PSDArray1[i] = dt*(norm(XX))/Wss;
+		PSDArray2[i] = dt*(norm(YY))/Wss;
+		//CSDArray[i] = DeltaT*(X*conj(Y))/Wss;	//COMPLEX
+		FreqArray[i] = (double)i/(NN*dt);
+	}
+	nNumSPECSamples = NN/2;		//tell the view we have stuff to plot
+}
+
+void CFracDoc::ResetSpectralData()
+{
+	nNumSamples = 0;
+	nNumSPECSamples = 0;
+	ComplexData.RemoveAll();
+	PSDArray1.RemoveAll();
+	PSDArray2.RemoveAll();
+	FreqArray.RemoveAll();
+}
+
+void CFracDoc::OnUpdateOperationSetup(CCmdUI* pCmdUI) 
+{
+	pCmdUI->Enable(!b_In_Progress);	
+}
+
+void CFracDoc::OnUpdateOperationRun(CCmdUI* pCmdUI) 
+{
+	pCmdUI->Enable(!b_In_Progress);
+}
+
+void CFracDoc::OnUpdateOperationsMeasurementSetUp(CCmdUI* pCmdUI) 
+{
+	pCmdUI->Enable(!b_In_Progress);
+}
+
+void CFracDoc::OnUpdateOperationsMeasure(CCmdUI* pCmdUI) 
+{
+	pCmdUI->Enable(b_run);	
+}
+
+///////////////////////////////////////////////
+// Helper Routines
+///////////////////////////////////////////////
+
+void CFracDoc::PumpMessages()
+{
+	MSG message;
+	while(::PeekMessage(&message, NULL, 0,0, PM_REMOVE))
+	{
+		::TranslateMessage(&message);
+		::DispatchMessage(&message);
+	}
+	while(bPauseFlag)
+	{
+		::GetMessage(&message, NULL, 0, 0);
+		::TranslateMessage(&message);
+		::DispatchMessage(&message);
+	}	//stay here until a continue message is recieved
+}
+
+
+///////////////////////////////////////////////////
+
+void CFracDoc::OnUpdateFileNew(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	
+}
+
+///////////////////////////////////////////////////
+
+char BASED_CODE CFracDoc::szTimeFilter[] = "Time Series Data (*.csv)|*.csv||";
+
+

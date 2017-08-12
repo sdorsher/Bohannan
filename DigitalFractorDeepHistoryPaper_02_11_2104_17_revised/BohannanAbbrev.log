@@ -1,0 +1,68 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2014.1.1)  6 FEB 2014 21:39
+entering extended mode
+**C:/Users/sdorsher/Documents/Bohannan/DigitalFractorDeepHistoryPaper_02_06_210
+4_16/BohannanAbbrev.bib
+
+(C:/Users/sdorsher/Documents/Bohannan/DigitalFractorDeepHistoryPaper_02_06_2104
+_16/BohannanAbbrev.bib
+Overfull \hbox (15.44054pt too wide) in paragraph at lines 30--37
+[]\tenrm @bookLuo:13, au-thor=Ying Luo and Yang-Quan Chen, ti-tle=Fractional Or
+-der Mo-tion Con-trols, year=2013,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm b
+.\kern0.27779
+.\tenrm o
+.etc.
+
+
+Overfull \hbox (10.32927pt too wide) in paragraph at lines 56--64
+\tenrm Flat-tery, ti-tle=Numerical Recipes in C: The art of Sci-en-tific Com-pu
+t-ing, edi-tion=Second, pub-lisher=Cambridge|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm F
+.\tenrm l
+.\tenrm a
+.\tenrm t
+.\discretionary
+..\tenrm -
+.etc.
+
+
+Overfull \hbox (12.57927pt too wide) in paragraph at lines 65--73
+[]\tenrm @articlePooseh:13, au-thor=Shakoor Pooseh and Ri-cardo Almeida and Del
+fim F. M. Tor-res, ti-tle=Numerical|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (9.52385pt too wide) in paragraph at lines 65--73
+\tenrm Ap-prox-i-ma-tions of Frac-tional Deriva-tives with Ap-pli-ca-tions, jou
+r-nal=Asian J. Con-trol, vol-ume=15, pages=698-|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm A
+.\tenrm p
+.\discretionary
+..\tenrm -
+.\tenrm p
+.\tenrm r
+.etc.
+
+)
+*
+! Emergency stop.
+<*> ...storyPaper_02_06_2104_16/BohannanAbbrev.bib
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

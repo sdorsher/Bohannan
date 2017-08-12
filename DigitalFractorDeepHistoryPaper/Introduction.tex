@@ -1,0 +1,33 @@
+
+Interest in the application of the fractional calculus has been
+growing at an ever increasing rate. Of long term and continued
+interest is in the use of fractional order (FO) operators, such as
+integrators and differentiators, in motion control
+applications.~\cite{Luo:13} While wide bandwidth analog controllers
+have been successfully demonstrated~\cite{Bohannan:08}, fractional
+order analog circuit elements are not generally available and the
+prototypes that have been demonstrated do not have the ability to be
+retuned for a specific desired phase.~\cite{Monje:10}
+
+Unfortunately, the existing techniques for digital approximation of FO
+operators are limited in bandwidth to on the order of three and a half
+decades of frequency response while nonlinear effects in motion
+control systems can span five decades or more. This places a severe
+constraint on the design and implementation of digital FO controllers,
+i.e. how to set the sampling frequency to meet the high speed
+requirements necessitated by the Nyquist sampling rate while at the
+same time providing enough deep memory to get low offset
+error. Additionally, the infinite impulse response type of
+implementation cannot guarantee stability due to the limitations of
+finite precision arithmetic. See e.g.~\cite{Chen:04a}.
+
+Given the current necessity to implement FO controls in digital form,
+it is desirable to obtain the most efficient algorithm to compute a
+fractional order operator while maximizing the numerical stability of
+the algorithm. Efficiency to be measured in both memory utilization
+and number of computations per time step. This paper outlines a
+computational method inspired by the Riemann-Liouville integral
+definition and the Gr{\"u}nwald algorithm.~\cite{OldSpan:74} The
+essential concept is the rescaling of time by successive accumulation
+of older data into increasing size bins for deeper memory.
+

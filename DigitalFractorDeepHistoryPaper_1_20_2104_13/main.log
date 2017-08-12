@@ -1,0 +1,393 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2013.6.25)  20 JAN 2014 21:36
+entering extended mode
+**C:/Users/sdorsher/Documents/Bohannan/DigitalFractorDeepHistoryPaper_1_1_2104_
+13/main.tex
+
+(C:/Users/sdorsher/Documents/Bohannan/DigitalFractorDeepHistoryPaper_1_1_2104_1
+3/main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\elsarticle.cls
+Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
+\@bls=\dimen102
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+Requested font "cmr12" at 12.0pt
+ -> cmr12
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+Requested font "pzdr" at 12.0pt
+ -> pzdr
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)
+Requested font "psyr" at 12.0pt
+ -> psyr
+)
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\main.spl) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+\appnamewidth=\dimen109
+)
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen110
+\epsfysize=\dimen111
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks17
+\float@box=\box30
+\@float@everytoks=\toks18
+\@floatcapt=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks19
+\c@algorithm=\count96
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count97
+\c@ALC@line=\count98
+\c@ALC@rem=\count99
+\c@ALC@depth=\count100
+\ALC@tlm=\skip47
+\algorithmicindent=\skip48
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen112
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count101
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count102
+\leftroot@=\count103
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count104
+\DOTSCASE@=\count105
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
+\dotsspace@=\muskip10
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
+\tag@help=\toks21
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
+\andhelp@=\toks22
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks23
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip52
+\subfigcapskip=\skip53
+\subfigcaptopadj=\dimen121
+\subfigbottomskip=\skip54
+\subfigcapmargin=\dimen122
+\subfiglabelskip=\skip55
+\c@subfigure=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@lotdepth=\count116
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip56
+\subfig@bottom=\skip57
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\numcompress.sty
+Package: numcompress 2012/08/18 187 numcompress (CVR)
+
+
+Package numcompress Warning: ****************************************
+(numcompress)                Package numcompress v,187 loaded
+(numcompress)                [Compress numbers (CVR)]
+(numcompress)                ****************************************.
+
+)
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+Requested font "cmbx12" at 12.0pt
+ -> cmbx12
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmr6" at 6.0pt
+ -> cmr6
+Requested font "cmmi12" at 12.0pt
+ -> cmmi12
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy10" at 12.0pt
+ -> cmsy10
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+Requested font "cmex10" at 12.0pt
+ -> cmex10
+Requested font "cmex8" at 8.0pt
+ -> cmex8
+Requested font "cmex7" at 6.0pt
+ -> cmex7
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+Requested font "msam10" at 12.0pt
+ -> msam10
+Requested font "msam10" at 8.0pt
+ -> msam10
+Requested font "msam7" at 6.0pt
+ -> msam7
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Requested font "msbm10" at 12.0pt
+ -> msbm10
+Requested font "msbm10" at 8.0pt
+ -> msbm10
+Requested font "msbm7" at 6.0pt
+ -> msbm7
+Requested font "cmti12" at 12.0pt
+ -> cmti12
+Requested font "cmr17" at 17.28pt
+ -> cmr17
+Requested font "cmex7" at 7.0pt
+ -> cmex7
+Requested font "cmex7" at 5.0pt
+ -> cmex7
+Requested font "msam10" at 10.0pt
+ -> msam10
+Requested font "msam7" at 7.0pt
+ -> msam7
+Requested font "msam5" at 5.0pt
+ -> msam5
+Requested font "msbm10" at 10.0pt
+ -> msbm10
+Requested font "msbm7" at 7.0pt
+ -> msbm7
+Requested font "msbm5" at 5.0pt
+ -> msbm5
+Requested font "cmti10" at 10.0pt
+ -> cmti10
+Requested font "cmti7" at 7.0pt
+ -> cmti7
+
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\Introduction.tex
+Overfull \hbox (57.87381pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/10 Preprint submitted to Communications in Nonlinear Science and 
+Numerical Simulation January 20, 2014
+ []
+
+[1
+
+
+])
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+ [2]
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\algorithmDefinitions.tex
+File: FIG1A.eps Graphic file (type eps)
+ <FIG1A.eps>
+File: FIG1B.eps Graphic file (type eps)
+ <FIG1B.eps> [3] [4] [5]
+File: FIG2.eps Graphic file (type eps)
+ <FIG2.eps>
+[6])
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\computationalAnalysis.tex [7] [8]) [9]
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\verificationMethods.tex
+File: FIG3.eps Graphic file (type eps)
+ <FIG3.eps>) [10] [11]
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\results.tex
+File: FIG4.eps Graphic file (type eps)
+ <FIG4.eps> [12]
+File: FIG5.eps Graphic file (type eps)
+ <FIG5.eps>
+File: FIG6.eps Graphic file (type eps)
+ <FIG6.eps>
+File: FIG7.eps Graphic file (type eps)
+ <FIG7.eps>
+File: FIG8.eps Graphic file (type eps)
+ <FIG8.eps>)
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\conclusions.tex [13] [14] [15] [16] [17] [18])
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\main.bbl [19]) [20]
+(C:\Users\sdorsher\Documents\Bohannan\DigitalFractorDeepHistoryPaper_1_1_2104_1
+3\main.aux) ) 
+Here is how much of TeX's memory you used:
+ 2668 strings out of 429156
+ 30699 string characters out of 3167929
+ 91984 words of memory out of 3000000
+ 5862 multiletter control sequences out of 15000+200000
+ 12322 words of font info for 47 fonts, out of 3000000 for 9000
+ 786 hyphenation exceptions out of 8191
+ 32i,8n,30p,1371b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main.pdf (20 pages).

@@ -1,0 +1,30 @@
+used:
+EqnGL.png
+Eqnwj.png
+Eqnxj.png
+grunwaldWeightsQ.eps
+EqnWk.png
+EqnModifiedGL.png
+EqnWbar.png
+EqnXshift.png
+EqnModifiedGL.png
+binNumVnumPerBin.eps
+binMaxVsumW_p05.eps
+binMaxVsumW_m05.eps
+time1000_10_10_p05.eps
+timeZoom1000_10_10_p05.eps
+bode10000_10_10_p05.eps
+bode1G_40_40_26_p03.eps
+bode1G_40_26_m05.eps
+
+
+
+maybe:
+log-log grunwald weights for integral form
+linear scale binMaxVsumW_p05.eps
+
+definitely:
+bin shifting diagram
+bin weight combining diagram?
+scaling of algorithm with number of registers
+conclusions

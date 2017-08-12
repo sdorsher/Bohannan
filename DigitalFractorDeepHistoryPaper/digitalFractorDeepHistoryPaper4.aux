@@ -1,0 +1,55 @@
+\relax 
+\citation{Luo:13}
+\citation{Bohannan:08}
+\citation{Monje:10}
+\citation{Chen:04a}
+\Newlabel{SCSU}{a}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{sec:intro}{{1}{1}}
+\citation{OldSpan:74}
+\@writefile{toc}{\contentsline {paragraph}{Outline\\}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Algorithm definitions}{2}}
+\newlabel{sec:algorithmDefn}{{2}{2}}
+\newlabel{fig:freqScaling}{{2}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let each division represent a single time step and each bar represent a bin, scaled such that the duration of a bin increases further back in time (toward the right). The value of the bin is the average of the input signal, the sine wave, at each point in time within that bin. There exists some oldest bin that responds sensitively to the input signal (in this figure, the second bin). For lower frequencies, that oldest bin moves to older times. This illustrates the sensitivity of short bins at recent times to high frequencies and long bins in the distant past to low frequencies.}}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Modified Grunwald}{3}}
+\newlabel{simpleGrunwald}{{1}{3}}
+\newlabel{wj}{{2}{3}}
+\newlabel{eqn:sumWk}{{3}{4}}
+\newlabel{avgSimpleGrunwald}{{4}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Updating the average history}{4}}
+\newlabel{sec:shifting}{{2.2}{4}}
+\newlabel{eqn:updating}{{5}{4}}
+\newlabel{fig:binShifting}{{2.2}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When the input data $x_0$ is read, virtual data elements with bin average values $X_k$ are shifted from the $k$th to the $(k+1)$th bin. The first $n-1$ bins are at capacity, but the $n$th bin gains one data point. The bin averages are updated to value $X_k^\prime $ through a weighted average.}}{5}}
+\newlabel{eqn:Wbar}{{6}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Computational efficiency}{5}}
+\newlabel{sec:computation}{{3}{5}}
+\newlabel{eqn:Nt}{{7}{6}}
+\newlabel{eqn:GrunwaldRecursion}{{8}{6}}
+\newlabel{eqn:shift1}{{9}{7}}
+\newlabel{eqn:shift2}{{10}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Validation methods}{8}}
+\newlabel{sec:methods}{{4}{8}}
+\newlabel{eqn:initialPhase}{{11}{8}}
+\newlabel{eqn:phases}{{12}{8}}
+\newlabel{eqn:amplitude}{{13}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Zero crossings of a $0.5$ order derivative of a sine wave input signal at long times relative to the period. From this the reconstructed phase can be verified using the knowledge that the frequency of this sine wave was $0.7924$ Hz. Reconstructed and zero-crossing phases are shown in Table\nobreakspace  {}4\hbox {}. In this plot, the duration was $10.0$ s and there were $1000$ time steps. There were 10 terms in the CFE and 10 bins in all binned Grunwald approximations. A variety of binning methods were used: truncated simple Grunwald (GL), linearly increasing bin sizes (LIN), bin sizes increasing as a square (SQ), exponentially increasing bin sizes (EXP), and bin sizes following a Fibbonacci rule (FIB).}}{9}}
+\newlabel{fig:timeDomain}{{3}{9}}
+\newlabel{tab:phaseRecon}{{4}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Phases reconstructed through sinusoidal fits and phases approximated through single zero-crossings of a single frequency ($0.7924$ Hz) based upon Figure\nobreakspace  {}\G@refundefinedtrue \text  {\normalfont  \bfseries  ??}\GenericWarning  {               }{LaTeX Warning: Reference `fig:zoomTimeDomain' on page 9 undefined}.}}{9}}
+\bibstyle{model3-num-names}
+\bibdata{BohannanAbbrev}
+\bibcite{Luo:13}{{1}{2013}{{Luo and Chen}}{{}}}
+\bibcite{Bohannan:08}{{2}{2008}{{Bohannan}}{{}}}
+\bibcite{Monje:10}{{3}{2010}{{Monje et~al.}}{{Monje, Chen, Vinagre, Xue and Feliu}}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{10}}
+\newlabel{sec:bode}{{5}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{10}}
+\newlabel{conclusions}{{6}{10}}
+\newlabel{fig:bode10p05}{{5}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Amplitude and phase as a function of frequency for 10 registers of binned (SQ10, EXP10, FIB10) or unbinned (GL10, CFE10) input signal history. GL is the full Grunwald calculation, for the entire input signal history prior to that time.}}{11}}
+\bibcite{Chen:04a}{{4}{2004}{{Chen et~al.}}{{Chen, Vinagre and Podlubny}}}
+\bibcite{OldSpan:74}{{5}{1974}{{Oldham and Spanier}}{{}}}
+\newlabel{fig:bode40_26}{{5}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Bode plots for CFE with $40$ input signal history registers and average Grunwald with $26$ input signal history bins for $\alpha =0.5, 0.3, -0.3,$, and $-0.5$. }}{13}}

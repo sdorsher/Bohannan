@@ -1,0 +1,44 @@
+
+Interest in the application of the fractional calculus has been
+growing at an ever increasing rate. Of long term and continued
+interest is in the use of fractional order (FO) operators, such as
+integrators and differentiators, in motion control
+applications.~\cite{Luo:13} While wide bandwidth analog controllers
+have been successfully demonstrated~\cite{Bohannan:08}, fractional
+order analog circuit elements are not generally available and the
+prototypes that have been demonstrated do not have the ability to be
+retuned for a specific desired phase.~\cite{Monje:10}
+
+Unfortunately, the existing techniques for digital approximation of FO
+operators are limited in bandwidth to on the order of three and a half
+decades of frequency response while nonlinear effects in motion
+control systems can span five decades or more. This places a severe
+constraint on the design and implementation of digital FO controllers,
+i.e. how to set the sampling frequency to meet the high speed
+requirements necessitated by the Nyquist sampling rate while at the
+same time providing enough deep memory to get low offset
+error. Additionally, the infinite impulse response type of
+implementation cannot guarantee stability due to the limitations of
+finite precision arithmetic. See e.g.~\cite{Chen:04a}.
+
+Given the current necessity to implement FO controls in digital form,
+it is desirable to obtain the most efficient algorithm to compute a
+fractional order operator while maximizing the numerical stability of
+the algorithm. Efficiency to be measured in both memory utilization
+and number of computations per time step. This paper outlines a
+computational method inspired by the Riemann-Liouville integral
+definition and the Gr{\"u}nwald summation formula.~\cite{OldSpan:74} 
+The essential concept is the rescaling of time by successive accumulation
+of older data into increasing size bins for deeper memory.
+
+Our motivation is two--fold. First to introduce the idea of ``time scaling'' 
+for computations requiring coverage of very long time spans, and 
+second to offer an algorithm that might be used in a microprocessor
+based control unit (mcu) requiring flat phase response over a 
+wide bandwidth. One might wonder why the attempt at such extended
+bandwidth since integer order derivative and integral operator will typically
+either decimate or expand the amplitude beyond the range of analog
+to digital converters due to the $\omega^{\pm 1}$ scaling. 
+Fractional order scaling is much ''softer'' in the sense that the magnitude
+scaling only goes as $\omega^{\pm \alpha}$ with $|\alpha | < 1$, 
+allowing for effective operation over a much wider bandwidth.

@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{luo:13}
+Ying Luo and Yang-Quan Chen.
+\newblock {\em Fractional Order Motion Controls}.
+\newblock John Wiley {\&} Sons, Chichester, West Sussex, 2013.
+
+\bibitem{Bohannan:08}
+G.~Bohannan.
+\newblock Analog fractional order controller in temperature and motor control
+  applications.
+\newblock {\em Journal of Vibration and Control}, 14(9-10):1487--1498, 2008.
+
+\bibitem{monje:10}
+Concepci{\'o}n~A. Monje, YangQuan Chen, Blas~M. Vinagre, Dingy\"{u} Xue, and
+  Vicente Feliu.
+\newblock {\em Fractional-order Systems and Controls: Fundamentals and
+  Applications, {\rm{a monograph in the}} Advances in Industrial Control
+  \rm{Series}}.
+\newblock Springer, Berlin, 2010.
+
+\bibitem{Chen:04a}
+Yang-Quan Chen, Blas~M. Vinagre, and Igor Podlubny.
+\newblock Continued fraction expansion approaches to discretizing fractional
+  order derivatives -- an expository review.
+\newblock {\em Nonlinear dynamics}, 38:155--170, 2004.
+
+\bibitem{OldSpan:74}
+K.~Oldham and J.~Spanier.
+\newblock {\em The Fractional Calculus}.
+\newblock Academic Press, New York, 1974.
+
+\end{thebibliography}

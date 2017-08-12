@@ -1,0 +1,5 @@
+clocks ticks (clicks) per second	1000
+properties	0
+partition	0
+weights	0
+zeroing	0

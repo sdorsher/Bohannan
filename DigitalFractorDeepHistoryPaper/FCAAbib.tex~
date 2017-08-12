@@ -1,0 +1,35 @@
+%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% arranged in ALPHABETIC ORDER of Authors' Families
+
+ \begin{thebibliography}{99}
+ \normalsize
+
+%%%% example for a book %%%%%%%%%%%%%
+\bibitem{GasRah}
+ G. Gasper, M. Rahman,
+ {\it Basic Hypergeometric Series}.
+ Cambridge University Press, Cambridge (1990).
+
+%%%% example for article in FCAA journal %%%%%%%%%%%%%%%%%
+\bibitem{Kir}
+ V. Kiryakova,
+ A brief story about the operators of generalized
+fractional calculus.
+ \emph{Fract. Calc. Appl. Anal.} \textbf{11}, No 2 (2008), 201-218.
+
+%%%% example for journal's article %%%%%%%%%%%%%%%%%
+\bibitem{Moak}
+ D.S. Moak,
+ The $q$-analogue of the Laguerre polynomials.
+{\it J. Math. Anal. Appl.} {\bf 81}, No 1 (1981), 20-47.
+
+%%%% example for a paper in Proceedings %%%%%%%%%%%%%
+\bibitem{Rosbl}
+ M. Rosenblum,
+ Generalized Hermite polynomials and the Bose-like oscillator
+ calculus.
+ In: {\it Operator Theory: Advances and Applications},
+ Birkh\"auser, Basel (1994), 369-396.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{thebibliography} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

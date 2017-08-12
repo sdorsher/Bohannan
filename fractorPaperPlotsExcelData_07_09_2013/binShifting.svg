@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="binShifting.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="400.23851"
+     inkscape:cy="527.08465"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 337,552.36218 0,-80"
+       id="path2995"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 438,552.36218 0,-80"
+       id="path2997"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 539,552.36218 -1,-80"
+       id="path2999"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 638,552.36218 -1,-80"
+       id="path3001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 237.336,471.77105 0,80.82618 201.13996,0"
+       id="path3071"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 537.81196,552.59723 100.56998,0 0,0 -1.23398,-0.61699"
+       id="path3073"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="letter-spacing:0.02px"
+       x="135.73863"
+       y="598.25476"
+       id="text3075"><tspan
+         sodipodi:role="line"
+         id="tspan3077"
+         x="135.73863"
+         y="598.25476" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:;baseline-shift:baseline"
+       x="138.2066"
+       y="598.25476"
+       id="text3079"><tspan
+         sodipodi:role="line"
+         id="tspan3081"
+         x="138.2066"
+         y="598.25476" /></text>
+    <g
+       id="g3089"
+       transform="translate(277.1658,560.07389)">
+      <text
+         id="text3091"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3093"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">0</text>
+      <text
+         id="text3095"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="11.55"
+         xml:space="preserve">’</text>
+      <text
+         id="text3097"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="13.8"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3112"
+       transform="translate(380.03383,561.64627)">
+      <text
+         id="text3114"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3116"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">1</text>
+      <text
+         id="text3118"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="11.55"
+         xml:space="preserve">’</text>
+      <text
+         id="text3120"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="13.8"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3135"
+       transform="translate(112.74377,554.09537)">
+      <text
+         id="text3137"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">U</text>
+      <text
+         id="text3139"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="8.8500004"
+         xml:space="preserve">pdated av</text>
+      <text
+         id="text3141"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="64.5"
+         xml:space="preserve">erage</text>
+      <text
+         id="text3143"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="96.150002"
+         xml:space="preserve"> </text>
+      <text
+         id="text3145"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="99.150002"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3161"
+       transform="translate(115.16815,567.23565)">
+      <text
+         id="text3163"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">signal history</text>
+      <text
+         id="text3165"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="73.650002"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3195"
+       transform="translate(112.12129,423.87848)">
+      <text
+         id="text3197"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">Value</text>
+      <text
+         id="text3199"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="31.65"
+         xml:space="preserve"> </text>
+      <text
+         id="text3201"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="34.799999"
+         xml:space="preserve">of virtual</text>
+      <text
+         id="text3203"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="85.050003"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3218"
+       transform="translate(115.25326,437.30332)">
+      <text
+         id="text3220"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">data</text>
+      <text
+         id="text3222"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="25.049999"
+         xml:space="preserve"> </text>
+      <text
+         id="text3224"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="28.200001"
+         xml:space="preserve">shifted</text>
+      <text
+         id="text3226"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="66.75"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3241"
+       transform="translate(583.3054,561.18647)">
+      <text
+         id="text3243"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3245"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">n</text>
+      <text
+         id="text3247"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="11.7"
+         xml:space="preserve">’</text>
+      <text
+         id="text3249"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="13.95"
+         xml:space="preserve"> </text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 465.83029,506.3227 z"
+       id="path3260"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 470.14925,508.17368 z"
+       id="path3262"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3268"
+       transform="translate(473.08549,490.13957)">
+      <text
+         id="text3270"
+         style="font-size:22.5px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="21.439659"
+         x="0"
+         xml:space="preserve">. . .</text>
+      <text
+         id="text3272"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="21.439659"
+         x="28.200001"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3285"
+       transform="translate(268.73302,498.99151)">
+      <text
+         id="text3287"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">c</text>
+      <text
+         id="text3289"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="5.8499999"
+         xml:space="preserve">0</text>
+      <text
+         id="text3291"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="10.2"
+         xml:space="preserve">’</text>
+      <text
+         id="text3293"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="12.3"
+         xml:space="preserve"> </text>
+      <text
+         id="text3295"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="15.45"
+         xml:space="preserve">=</text>
+      <text
+         id="text3297"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="22.35"
+         xml:space="preserve"> </text>
+      <text
+         id="text3299"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="25.5"
+         xml:space="preserve">b</text>
+      <text
+         id="text3301"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="32.700001"
+         xml:space="preserve">0</text>
+      <text
+         id="text3303"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="37.049999"
+         xml:space="preserve">  </text>
+      <text
+         id="text3305"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="43.349998"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3326"
+       transform="translate(368.23896,499.49984)">
+      <text
+         id="text3328"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">c</text>
+      <text
+         id="text3330"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="5.8499999"
+         xml:space="preserve">1</text>
+      <text
+         id="text3332"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="10.2"
+         xml:space="preserve">’</text>
+      <text
+         id="text3334"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="12.3"
+         xml:space="preserve"> </text>
+      <text
+         id="text3336"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="15.45"
+         xml:space="preserve">= b</text>
+      <text
+         id="text3338"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="32.700001"
+         xml:space="preserve">1</text>
+      <text
+         id="text3340"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="37.049999"
+         xml:space="preserve">  </text>
+      <text
+         id="text3342"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="43.349998"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3361"
+       transform="translate(112.73778,486.84641)">
+      <text
+         id="text3363"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">Updated</text>
+      <text
+         id="text3365"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="48.599998"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3378"
+       transform="translate(114.63116,500.28474)">
+      <text
+         id="text3380"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">b</text>
+      <text
+         id="text3382"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="7.1999998"
+         xml:space="preserve">in occupancy</text>
+      <text
+         id="text3384"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="79.949997"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3398"
+       transform="translate(560.78987,500.8701)">
+      <text
+         id="text3400"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">c</text>
+      <text
+         id="text3402"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="5.8499999"
+         xml:space="preserve">n</text>
+      <text
+         id="text3404"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="6.7540107"
+         x="10.35"
+         xml:space="preserve">’</text>
+      <text
+         id="text3406"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="12.45"
+         xml:space="preserve"> </text>
+      <text
+         id="text3408"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="15.6"
+         xml:space="preserve">= c</text>
+      <text
+         id="text3410"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="31.5"
+         xml:space="preserve">n</text>
+      <text
+         id="text3412"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="36"
+         xml:space="preserve"> </text>
+      <text
+         id="text3414"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="39.150002"
+         xml:space="preserve">+ 1</text>
+      <text
+         id="text3416"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="56.25"
+         xml:space="preserve">  </text>
+      <text
+         id="text3418"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="62.400002"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3439"
+       transform="translate(117.04838,449.76863)">
+      <text
+         id="text3441"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">into the bin</text>
+      <text
+         id="text3443"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="64.800003"
+         xml:space="preserve">   </text>
+      <text
+         id="text3445"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="74.099998"
+         xml:space="preserve"> </text>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459"
+       width="13.435029"
+       height="18.384777"
+       x="219.9102"
+       y="451.32141" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-7"
+       width="13.435029"
+       height="18.384777"
+       x="319.13739"
+       y="452.37167" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-4"
+       width="13.435029"
+       height="18.384777"
+       x="419.54654"
+       y="452.27118" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3459-0"
+       width="13.435029"
+       height="18.384777"
+       x="520.3197"
+       y="451.56406" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 238.29499,456.27117 c 24.03573,-5.26511 28.98289,10.30538 28.99138,10.6066 l 0.7071,0"
+       id="path3500"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 258.80108,466.17066 c 8.48528,1.41421 9.8995,1.41421 9.8995,1.41421"
+       id="path3502"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 273.65032,456.97827 z"
+       id="path3504"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 268.57926,467.58487 0.7071,-7.77817 0,0 0,0 0,0"
+       id="path3506"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 339.39044,457.27874 c 24.03573,-5.26511 28.98289,10.30538 28.99138,10.6066 l 0.7071,0"
+       id="path3500-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 359.89653,467.17823 c 8.48528,1.41421 9.8995,1.41421 9.8995,1.41421"
+       id="path3502-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 374.74577,457.98584 z"
+       id="path3504-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 369.67471,468.59244 0.7071,-7.77817 0,0 0,0 0,0"
+       id="path3506-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 440.04225,458.57163 c 24.03573,-5.26511 28.98289,10.30538 28.99138,10.6066 l 0.7071,0"
+       id="path3500-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 460.54834,468.47112 c 8.48528,1.41421 9.8995,1.41421 9.8995,1.41421"
+       id="path3502-45"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 475.39758,459.27873 z"
+       id="path3504-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 470.32652,469.88533 0.7071,-7.77817 0,0 0,0 0,0"
+       id="path3506-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 539.62298,457.98584 c 24.03573,-5.26511 28.98289,10.30538 28.99138,10.6066 l 0.7071,0"
+       id="path3500-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 560.12907,467.88533 c 8.48528,1.41421 9.8995,1.41421 9.8995,1.41421"
+       id="path3502-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 574.97831,458.69294 z"
+       id="path3504-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 569.90725,469.29954 0.7071,-7.77817 0,0 0,0 0,0"
+       id="path3506-5"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3565"
+       transform="translate(221.66814,431.74071)">
+      <text
+         id="text3567"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">x</text>
+      <text
+         id="text3569"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="6"
+         xml:space="preserve">0</text>
+      <text
+         id="text3571"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="10.35"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3585"
+       transform="translate(321.21108,432.43522)">
+      <text
+         id="text3587"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3589"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">0</text>
+      <text
+         id="text3591"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="11.55"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3605"
+       transform="translate(420.32735,433.76847)">
+      <text
+         id="text3607"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3609"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">1</text>
+      <text
+         id="text3611"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="11.55"
+         xml:space="preserve"> </text>
+    </g>
+    <g
+       id="g3625"
+       transform="translate(519.23994,432.46284)">
+      <text
+         id="text3627"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="0"
+         xml:space="preserve">X</text>
+      <text
+         id="text3629"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="7.1999998"
+         xml:space="preserve">n</text>
+      <text
+         id="text3631"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="11.7"
+         xml:space="preserve">-</text>
+      <text
+         id="text3633"
+         style="font-size:8.69999981px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="15.008913"
+         x="14.4"
+         xml:space="preserve">1</text>
+      <text
+         id="text3635"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="18.75"
+         xml:space="preserve">   </text>
+      <text
+         id="text3637"
+         style="font-size:13.80000019px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
+         y="13.057754"
+         x="28.200001"
+         xml:space="preserve"> </text>
+    </g>
+  </g>
+</svg>

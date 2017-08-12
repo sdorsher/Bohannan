@@ -1,0 +1,246 @@
+{\bf This is less a paper draft and more a note in paper form to
+circulate early amongst us because I want Chad's feedback and it
+seemed easiest just to write it up. I'm not even sure the content is
+correct.}
+
+To count the number of processor steps required, the algorithms
+described in Section~\ref{subsec:avgShift} are converted to pseudocode
+then the conversions listed in Table~\ref{tab:stepCounting} are
+applied.
+
+\begin{table}
+\begin{tabular}{ll}
+\hline
+Type    &Cost   \\
+\hline
+Integer assign  &Free\\
+Floating point assign &Free \\
+Negation &Free \\
+Integer $+$,$-$ &Free \\
+Floating point $+$,$-$ &1 \\
+Integer $*$,$\/$ &1 \\
+Floating point $*$,$\/$ &1 \\
+Floating point exponentiation &1 \\
+If (int clause) &Free \\
+If (float clause) &1 \\
+While (int clause) &1 \\
+While (float clause) &2 \\
+\hline
+\end{tabular}
+\label{tab:stepCounting}
+\caption{Number of processor steps required for various operations.}
+\end{table}
+
+During intialization, several things must happen. The array defining
+the binning structure, $b_k$, must be set. The history of the input
+signal must be zeroed and the first output must be set to zero as
+well. Most significantly, the binned weights must be calculated for
+the chosen binning structure.
+
+The time it takes to calculate or set $b_k$ is moderately dependent
+upon the details of the binning structure chosen. However, any binning
+structure will have a processing time that scales as $N_b$ rather than
+$N_t$ because of the number of bins that must be set. Here $N_t$ is
+the maximum history depth in time-steps of the $N_b$ memory storage
+bins. By definition,
+
+\begin{equation}
+N_t = \displaystyle\sum_{k=0}^{N_b}b_k.
+\label{eqn:Nt}
+\end{equation}
+
+Since zeroing (assignment) is computationally free, the bulk of the
+initialization process occurs during the computation of the
+weights. Since each individual Grunwald weight must be summed, this
+process scales as $N_t$. Equation~\ref{eqn:Wk} gives the algorithm for
+the calculation of the bin weights. The following recursion formula
+for Grunwald weights can be used to iterate $w_j$ to a new value with
+each time step. In the $j$th time step, $w_j$ has the value
+
+\begin{equation}
+w_j = \frac{j-1-\alpha}{j}w_{j-1}.
+\label{eqn:GrunwaldRecursion}
+\end{equation}
+
+In the implementation of an algorithm for initialization of the
+weights, individual Grunwald weights $w_j$ need not be stored in an
+array after calculation. These individual weights can be summed
+immediately into the corresponding bin weights $W_k$ according to
+Equation~\ref{eqn:Wk}, at which time the value of $w_j$ may be safely
+overwritten with $w_{j+1}$.
+
+Using these formulas, pseudocode for the weight-initialization
+algorithm is given in Algorithm~\ref{alg:initializating}.
+
+\begin{algorithm}
+\caption{Initialization of the binned weights. $\alpha$ is the order of the differintegral and $b_k$ is the bin capacity of the $k$th bin.}
+\label{alg:initializing}
+\begin{algorithmic}
+%\REQUIRE $0 \le \alpha \le 1$
+%\ENSURE Equation~\ref{eq:Wk}
+\FOR{$0\le k < N_b$}
+\STATE $W_k \gets 0.0$
+\ENDFOR
+\STATE $j \gets 1$
+\STATE $k \gets 0$
+\STATE $w \gets 1.0$
+\STATE $p \gets b_0$
+\WHILE{$k < Nb$}
+\STATE $W_k \gets W_k + w$
+\STATE $j \gets j +1$
+\IF{$j>p$}
+\STATE $k \gets k +1$
+\STATE $p \gets p +b_k$
+\ENDIF
+\STATE $w \gets (j-1.0-\alpha)/j\times w$
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+Using Table~\ref{tab:stepCounting}, the number of processor steps
+required to implement the weight initialization algorithm is $5N_t+1$.
+
+\smallskip
+
+Equation~\ref{eqn:updating} may be used as the basis for an algorithm
+to update the binned average input signal history values when a new
+input signal value is read. Care must be taken to account for the
+filling of the bins until the approximation reaches steady-state.
+
+Again, a memory saving opportunity is available. Since only one bin
+can be filling at a time and the rest must be either full ($c_k=b_k$)
+or empty ($c_k=0$), the full array of $N_b$ occupancy numbers $c_k$
+need not be stored. Instead, it is sufficient to store the index of
+the bin that is filling, $k_{filling}$ and its occupancy,
+$c_{filling}$. These unfilled bins with $k>k_{filling}$ and $c_k=0$
+are not updated when a new input signal value is read into the
+history.
+
+Pseudocode for the bin-average updating algorithm is given in
+Algorithm~\ref{alg:updating}.
+
+\begin{algorithm}
+\caption{Algorithm for updating the bin average values of the input signal history. $X_{k}$ is the $k$th average binned value of the history. $x_0$ is the input signal value that has just been read into the digital fractor.}
+\label{alg:updating}
+\begin{algorithmic}
+%\STATE $k_{filling}\gets 0$
+%\STATE $c_{filling}\gets 0$
+\STATE $k \gets N_b$
+\WHILE{$k>0$}
+\IF{$k=k_{filling}$}
+\STATE $c_{filling}\gets c_{filling} +1$
+\IF{$c_{filling}>b_k$}
+\STATE $k_{filling} \gets k_{filling} +1$
+\ENDIF
+\STATE $k\gets k+1$
+\STATE $X_k \gets \left(1.0-\frac{1.0}{c_{filling}}\right)X_k 
+- \frac{1.0}{c_{filling}}X_{k-1}$
+\ELSIF{$k<k_{filling}$}
+\STATE $X_k \gets \left(1.0-\frac{1.0}{b_k}\right)X_k 
+- \frac{1.0}{b_k}X_{k-1}$
+\ENDIF
+\STATE $k\gets k -1$
+\ENDWHILE
+\IF{$k_{filling}=0$}
+\STATE $c_{filling} \gets c_{filling} +1$
+\IF{$c_{filling}>b_0$}
+\STATE $k_{filling} \gets 1$
+\STATE $c_{filling} \gets 1$
+\ENDIF
+\STATE $X_k \gets \left(1.0-\frac{1.0}{c_{filling}}\right)X_0 
+- \frac{1.0}{c_{filling}}x_{0}$
+\ELSE
+\STATE $X_k \gets \left(1.0-\frac{1.0}{b_0}\right)X_0 
+- \frac{1.0}{b_0}x_{0}$
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+Table~\ref{tab:stepsCounting} yields $12N_b$ processor steps
+required to update the bin average values of the input signal history
+when a new data point is read.
+
+\smallskip
+
+Our algorithm for differintegration is based upon
+Equations~\ref{eqn:modifiedGrunwald}~and~\ref{eqn:Wkbar}. The
+algorithm is shown in Algorithm~\ref{alg:modGrun}.
+
+\begin{algorithm}
+\caption{The algorithm for differintegration using the modified Grunwald method described in Section~\ref{sec:avgShift}}.
+\label{alg:modGrun}
+\begin{algorithmic}
+\STATE $k\gets N_b$
+\WHILE{$k\ge 0$}
+\IF{$k=k_{filling}$}
+\STATE $W_k\gets\frac{c_{filling}}{b_k}W_k$
+\ENDIF
+\STATE $D_t^\alpha \gets D_t^\alpha + W_kX_k$
+\ENDWHILE
+\STATE $D_t^\alpha \gets (\Delta t)^{-\alpha}D_t^\alpha$
+\end{algorithmic}
+\end{algorithm}
+Based upon Table~\ref{tab:stepsCounting}, the number of processor
+steps required to calculate the differintegral using the modified
+Grunwald approach presented in this paper is $3N_b+2$.
+
+\begin{table}
+\begin{tabular}{ll}
+\hline
+Stage &Processor steps required \\
+\hline
+Initialization of weights &$5N_t+1$ \\
+Updating the average bin history values &$12N_b$ \\
+Summing the differintegral &$3N_b+2$\\
+\hline
+\end{tabular}
+\caption{Processor steps required for the different stages of the average Grunwald algorithm.}
+\label{tab:processor}
+\end{table}
+
+\smallskip
+
+The number of processor steps required for the three stages are
+summarized in Table~\ref{tab:processor}. Memory requirements for the
+algorithms described in this section are shown in
+Table~\ref{tab:memory}. 
+
+The two real-time operation stages, updating and differintegrating,
+together require $15N_b+2$ processor steps. With 26 bins ($N_b=26$),
+$392$ processor steps are required for each time-step of a fractional
+order differentiation or integration. $3N_b+6=84$ memory registers are
+required for 26 bins of history.
+
+Initialization, on the other hand, is a very resource-consuming
+process. For an exponentially scaled binning structure with a scale
+factor of two, $N_t=2^{26}-1=67,108,863$ for 26 bins. Initialization
+therefore requires $3.36\times 10^8$ processor steps, a calculation
+perhaps best achieved by a computer in a one-time operation. {\bf Here
+I might be wrong. Tell me if I am.}
+
+\begin{table}[h]
+\begin{tabular}{llll}
+\hline
+Variable& Definition & Size& Stages \\
+\hline
+$b_k$ & Bin capacity & $N_b$ &I, U, D \\
+$W_k$ & Binned weights & $N_b$ &I, U, D \\
+$X_k$ & Binned history & $N_b$ &I, U, D \\
+$x_0$ & Current input data & 1 & U \\
+$D_t^\alpha$ & Output differintegral & 1 & I, D\\
+$\alpha$ &Order of differintegral &1 &I, D\\
+$N_b$ &Number of bins &1 &I,U,D\\
+$N_t$ &Number of time steps stored &1 & I\\
+$\Delta t$ &Time step &1 &D\\
+$w_j$ & Grunwald weight, temp variable & 1 & I\\
+$k_{filling}$ & Currently filling bin & 1 & U, D\\
+$c_{filling}$ & Occupancy of filling bin & 1 & U, D \\  
+\hline
+\hline
+& Total w/o initialization &$3N_b+6$ &\\
+ & Total & $3N_b+9$ &\\
+\hline
+\end{tabular}
+\label{tab:memory}
+\caption{Accounting for memory in the Average-Shift algorithm. I = Initialization, U=Updating, D = Differintegration}
+\end{table}
+
+

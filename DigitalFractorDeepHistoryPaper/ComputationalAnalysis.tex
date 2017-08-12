@@ -1,0 +1,65 @@
+
+The computational efficiency of each algorithm concerns both the memory used by the algorithm and the number of computational steps required for the algorithm to execute, which is a measure of the speed. To characterize the operational efficiency of a digital fractor operating as a circuit element in real time, the quantities of interest are the memory or number of processor steps {/em per time step}.  
+
+many of the variables defined in Section~\ref{algorithmDefn_avgShift} do not need to be stored. The Grunwald weights $w_i$ become temporary variables during initialization. The bin occupation numbers $c_k$ can be assumed to be equal to $b_k$ for a full bin (a fixed number at initialization) or zero for an empty bin. Only one bin along the partitioned history may be currently filling, and the filling progresses from low bin number to high bin number in numerical order. Therefore, there is no need to store the full array $c_k$. Instead, one may store the number of the bin that is filling, $k_{filling}$, and its current occupancy, $c_filling$, and from that information, fully recover the adjusted weight $\bar{W}_k$. There is also no advantage to storing $\bar{W}_k$, since it changes with each time step. With those considerations in mind, we enumerate the remaining variables in Table~\ref{tab:memory} to tabulate a total memory requirement for the Average-Shift algorithm.
+
+
+\begin{table}[h]
+\begin{tabular}{llll}
+\hline
+Variable& Definition & Size& Stages \\
+\hline
+$b_k$ & Bin capacity & $N_b$ &I, S, D \\
+$W_k$ & Binned weights & $N_b$ &I, S, D \\
+$X_k$ & Binned history & $N_b$ &I, S, D \\
+$x_0$ & Current input data & 1 & S \\
+$D_t^\alpha$ & Output differintegral & 1 & I, D\\
+$\alpha$ &Order of differintegral &1 &I, D\\
+$N_b$ &Number of bins &1 &I,S,D\\
+$N_t$ &Number of time steps stored &1 & I\\
+$\Delta t$ &Time step &1 &D\\
+$w_i$ & Grunwald weight, temp variable & 1 & I\\
+$k_{filling}$ & Currently filling bin & 1 & S, D\\
+$c_{filling}$ & Occupancy of filling bin & 1 & S, D \\  
+\hline
+\hline
+& Total w/o initialization &$3N_b+6$ &\\
+ & Total & $3N_b+9$ &\\
+\hline
+\end{tabular}
+\label{tab:memory}
+\caption{Accounting for memory in the Average-Shift algorithm. I = Initialization, S = Shifting, D = Differintegration}
+\end{table}
+
+To calculate the number of computational steps required for initialization, we combine the cost of initializing relevant variables to zero with the cost of computing the binned weights, while we neglect the cost of initializing the shape of the partitioned history. This is because the choice of the number of elements per bin, $b_k$, may be application dependent and has a startup cost associated with it that is highly depended upon the functional form of $b_k$. $W_k$, $X_K$, $k_{filling}$, and $c_{filling}$ must initially be set to zero and $w_0$ must be set to one for a total of $2N_b+3$ computational steps. To compute $W_k$, we rely on the recursion formula for the Grunwald weights
+
+\begin{equation}
+w_j = \frac{j-1-\alpha}{j}w_{j-1}.
+\label{eqn:GrunwaldRecursion}
+\end{equation}
+
+ELIMINATE $H_{max}$
+
+FIX SPEED, INITIALIZATION
+
+\noindent There are four arithmetic steps per recursion, plus one count step to increment $j$. Since the initial value $w_0=1$ has been set exactly, there are $H_{max}-1$ recursive steps to get to the last of the $H_{max}$ Grunwald weights at the end of the $N_b$ bins. This produces a total of $5H_{max}-5$ computational steps to calculate the Grunwald weights so far. These Grunwald weights are not stored, but rather, they are summed together into binned weights as the computation progresses. Between the $N_b$ bins, there are between zero and $H_{max}-1$ sums taken depending on the bin structure of the partitioned history. Totalling the number of computational steps, there are between $2N_b+5H_{max}-2$ and $2N_b+6H_{max}-3$ computational steps taken during the initialization process, neglecting the actual operation of partitioning the history into bins. Initialization speed depends more strongly on the maximum signal memory depth of the partitioned history than on the number of bins in the partition. 
+
+During the shifting phase, where a new data point is read in from the outside world and added to the partitioned history, there are two possible cases: the binned history may already be full, or it may still be filling. There are six arithmetic steps required to evaluate Equation~\ref{}. It is only necessary to evaluate this expression for $k\le k_{filling}$, for a total of $6k_{filling}$ steps so far. For $k<k_{filling}$, $c_k'=b_k$ so no additional calculation is necessary; however, it is necessary to test that it falls within this region with an if statement. That adds $k_{filling}-1$ additional steps. On the other hand, for $k=k_{filling}$, $c_k$ must be incremented to obtain $c_k'$, adding two additional steps. Incrementing $k_{filling}$ if $c_{filling}=b_{k,{filling}}$ adds another two steps. Checking to be sure that $k<N_b$ at all times adds another step. Adding all these computational steps together, we obtain the total of $7k_{filling}+4$ computational steps required to shift a new data element into the binned history. From this, we see that partially filled binned histories operate more quickly than filled ones, and the steady-state speed of a filled history scales its number of bins.
+
+Likewise, integration has two cases, depending whether or not the history has been filled.  
+
+\begin{table}
+\begin{tabular}
+\hline
+Stage& Computational Steps\\
+Initialization & $5H_{Max}+2N_b-2$ to $6H_{max}+2N_b-3$\\
+Shifting & 7k_{filling}+4 \rightarrow 7N_b+4$\\
+
+\hline
+\hline
+Total & \\
+\hline
+\end{tabular}
+\label{tab:speed}
+\caption{Number of computational steps required for Average-Shift algorithm.}
+\end{table}

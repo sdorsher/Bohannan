@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\begin{document}
+\title{TITLE ME}
+\author{
+       AUTHOR ME
+}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+Who is writing me? Later anyway...
+\end{abstract}
+
+\section{Introduction}
+Professor Bohannan is writing this \ldots
+
+\paragraph{Outline}
+{\bf remove or fix this paragraph later-- this is here for our reference now} {\bf Do we intend to discuss the exponential or recursive algorithms in this paper?}
+\begin{itemize} 
+\item Section~\ref{algorithmDefn} will contain algorithm definitions. 
+\item Section~\ref{results} will contain:
+	\begin{itemize}
+	\item  the amplitude and phase response of these algorithms for a large and small number of bins in the partition. 
+	\item  an analysis of the computational resources required for the larger versus the smaller number of bins in the partition.
+	\end{itemize}
+\end{itemize}
+
+
+\section{Algorithm definiitions}\label{algorithmDefn}
+
+\subsection{The Average-Shift algorithm: partitioning the history into averaged bins}\label{algorithmDefn_avgShift}
+
+\include{avgShiftAlgorithm3}
+
+\section{Results}\label{results}
+
+\section{Conclusions}\label{conclusions}
+
+\bibliographystyle{abbrv}
+\bibliography{simple}
+
+\end{document}
+

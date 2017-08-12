@@ -1,0 +1,68 @@
+\relax 
+\citation{Luo:13}
+\citation{Bohannan:08}
+\citation{Monje:10}
+\Newlabel{Dorsher}{a}
+\Newlabel{Bohannan}{b}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{sec:intro}{{1}{1}}
+\citation{Chen:04a}
+\citation{OldSpan:74}
+\@writefile{toc}{\contentsline {paragraph}{Outline\\}{2}}
+\citation{Chen:04a}
+\citation{OldSpan:74}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Average Gr{\"u}nwald Algorithm}{3}}
+\newlabel{sec:algorithmDefn}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Modified Gr{\"u}nwald}{3}}
+\newlabel{simpleGrunwald}{{1}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let each division represent a single time step and each bar represent a bin. Larger amounts of time are included in bins with increasing time indices. The value of the bin the average of the input signal (the sine wave) at each time index within that bin. There exists some oldest bin (highest time index) that still responds sensitively to the input signal. This is the second bin for Figure\nobreakspace  {}a and the third bin for Figure\nobreakspace  {}b. Since the time step (grid size) and binning structure are held fixed, at lower frequencies, the oldest sensitive bin moves to higher time indices (further right). This illustrates the sensitivity of short bins at recent times to high frequencies and the sensitivity of long bins in the more distant past to low frequencies. This scaling relation motivates our binning strategies. All of the binning strategies used in this paper either have bins of constant duration or have bins that increase in duration further into the past, in order to achieve greater sensitivity at low frequencies.}}{4}}
+\newlabel{fig:freqScaling}{{1}{4}}
+\newlabel{wj}{{2}{5}}
+\newlabel{eqn:sumWk}{{3}{5}}
+\newlabel{eqn:Nh}{{4}{6}}
+\newlabel{avgSimpleGrunwald}{{5}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Updating the average history}{6}}
+\newlabel{sec:shifting}{{2.2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When the input data $x_0$ is read, virtual data elements with bin average values $X_k$ are shifted from the $k$th to the $(k+1)$th bin. The first $n-1$ bins are at capacity, but the $n$th bin gains one data point. The bin averages are updated to value $X_k^\prime $ through a weighted average. Since bins increase in duration at higher time indices, data is diluted as it is shifted further back into memory.}}{7}}
+\newlabel{fig:binShifting}{{2}{7}}
+\newlabel{eqn:updating}{{6}{7}}
+\newlabel{eqn:Wbar}{{7}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Computational efficiency}{7}}
+\newlabel{sec:computation}{{3}{7}}
+\newlabel{eqn:GrunwaldRecursion}{{8}{8}}
+\newlabel{eqn:shift1}{{9}{9}}
+\newlabel{eqn:shift2}{{10}{9}}
+\citation{Press:92}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Phases reconstructed through sinusoidal fits and phases approximated through single zero-crossings of a single frequency ($0.7924$ Hz) based upon Figure\nobreakspace  {}3\hbox {}, with an expected phase of $45^\circ $.}}{10}}
+\newlabel{tab:phaseRecon}{{1}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Validation methods}{10}}
+\newlabel{sec:methods}{{4}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visual measurements of phase of a $0.5$ order derivative of a sine wave input signal with a frequency of $0.7924$ Hz, using a variety of fractional derivative algorithms. Phase was evaluated by measuring the separation in zero-crossings and dividing by the period of the input sine wave, assumed to be the same as that of the output signals. Phases reconstructed using the sinusoidal fitting algorithm and phases reconstructed using the zero-crossing method are shown in Table\nobreakspace  {}1\hbox {}. The duration of the simulation shown in this figure was was $10.0$ s and there were $1000$ time steps such that $\delta t=0.01$ s. There were 10 terms in the IIR and 10 bins in all binned Gr{\"u}nwald approximations. A variety of binning methods were used in the average Gr{\"u}nwald algorithm: truncated simple Gr{\"u}nwald (GL), linearly increasing bin sizes (LIN), bin sizes increasing as a square (SQ), exponentially increasing bin sizes (EXP), and bin sizes following a Fibonacci rule (FIB). The lower plot shows a zoomed in view around the zero-crossings of the output signals, which were assumed to share the same frequency as the input signal.}}{11}}
+\newlabel{fig:timeDomain}{{3}{11}}
+\citation{Chen:04a}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{12}}
+\newlabel{sec:bode}{{5}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{13}}
+\newlabel{conclusions}{{6}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Exponential binning structure in the average Gr{\'u}nwald algorithm (EXP10) shows a factor of three improvement in constant-phase bandwidth over the accepted infinite impulse response continued fraction expansion (IIR10) algorithm for 10 memory registers of input signal history. This figure shows magnitude and phase as a function of frequency for 10 registers of binned (SQ10, EXP10, FIB10) or unbinned (GL10, IIR10) input signal history. GL is the full Gr{\"u}nwald calculation, for the entire input signal history prior to that time. For this figure, the duration was $10.0$ s, $N_t=10^4$, and $\delta t = 10^{-3}$ s.}}{14}}
+\newlabel{fig:bode10p05}{{4}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Exponential binning structure in the average Gr{\"u}nwald algorithm (EXP20) shows a two and a half decade improvement in constant phase bandwidth over the infinite impulse response continued fraction expansion algorithm (IIR20) with 20 memory registers of input signal history and $\alpha =0.5$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s.}}{15}}
+\newlabel{fig:bode20p05}{{5}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Exponential binning structure in the average Gr{\"u}nwald algorithm (EXP20) shows a three decade improvement in constant phase bandwidth over the infinite impulse response continued fraction expansion algorithm (IIR20) with 20 memory registers of input signal history and $\alpha =0.3$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s.}}{16}}
+\newlabel{fig:bode20p03}{{6}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Exponential binning structure in the average Gr{\"u}nwald algorithm (EXP20) shows a two and a half decade improvement in constant phase bandwidth over the infinite impulse response continued fraction expansion algorithm (IIR20) with 20 memory registers of input signal history and $\alpha =-0.3$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s.}}{17}}
+\newlabel{fig:bode20m03}{{7}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Exponential binning structure in the average Gr{\"u}nwald algorithm (EXP20) shows a two decade improvement in constant phase bandwidth over the infinite impulse response continued fraction expansion algorithm (IIR20) with 20 memory registers of input signal history and $\alpha =-0.5$. The duration was $10.0$ s, $N_t=10^6$, and $\delta t = 10^{-5}$ s. }}{18}}
+\newlabel{fig:bode20m05}{{8}{18}}
+\citation{Fukunaga:13}
+\citation{Pooseh:13}
+\bibstyle{model3-num-names}
+\bibdata{BohannanAbbrev}
+\bibcite{Luo:13}{{1}{2013}{{Luo and Chen}}{{}}}
+\bibcite{Bohannan:08}{{2}{2008}{{Bohannan}}{{}}}
+\bibcite{Monje:10}{{3}{2010}{{Monje et~al.}}{{Monje, Chen, Vinagre, Xue and Feliu}}}
+\bibcite{Chen:04a}{{4}{2004}{{Chen et~al.}}{{Chen, Vinagre and Podlubny}}}
+\bibcite{OldSpan:74}{{5}{1974}{{Oldham and Spanier}}{{}}}
+\bibcite{Press:92}{{6}{1992}{{Press et~al.}}{{Press, Teukolsky, Vetterling and Flattery}}}
+\bibcite{Fukunaga:13}{{7}{2013}{{Fukunaga and Shimizu}}{{}}}
+\bibcite{Pooseh:13}{{8}{2013}{{Pooseh et~al.}}{{Pooseh, Almeida and Torres}}}

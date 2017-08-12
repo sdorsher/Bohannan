@@ -1,0 +1,67 @@
+
+
+To obtain a digital differ-integrator that both is computationally efficient and contains contributions from deep history, we modify the Grunwald integral to make use of a history that has been partitioned into bins of fixed intervals in time. Within each bin, the input signal is taken to be well represented by its average. The motivation is to select bins such that time is rescaled-- a greater number of points contribute to a bin's sum far into the past where the weights are weak than near the present time.  
+
+Consider a digitally sampled data stream of points, $x_j$. As these data points enter, they could be stored in the history from most recent at $x_0$ to most distant past at some $x_{N_t}$.  Then, as a new data point entered, $x_i\rightarrow x_{i+1}$ and the new element would become $x_0$. 
+
+However, storing the full history of data points presents a large memory and computational burden. To avoid this, we partition the history into $N_b$ bins of sizes $b_k$ with the $k=0$ bin containing the $j=0$ data point after the first time step and store only the average values $X_k$ of these bins. Since the bins do not necessarily contain an equal number of time steps, it is not possible to update the bins by simply shifting one into another. Rather, we require an algorithm for shifting one virtual input signal element $x_i$, which we have not stored, from each bin into the next. 
+
+When this average history is updated, the new data element is shifted into the first bin through a weighted average. Since data elements represent time steps, they should be incompressible-- when one element is shifted into a bin, another element should be shifted out of that bin if the bin is full. To update the remaining bins, we take the weighted average obtained by adding one sample from the more recent bin to all minus one of the samples in the current bin. During start-up, it will be necessary to consider bins that have some set size, but are not filled to that capacity. In that case, it is the current occupation number of each bin that enters the calculation. 
+
+
+Mathematically,  if the $k$th bin initially contains $c_k$
+elements, adding another element either leaves $c_k$ unchanged
+($c_k\prime=c_k=b_k$) or increments the number of elements in the bin such
+that $c_k\prime = c_k + 1$ if the bin is not yet at capacity. Either way, the updated average of the
+value of the $k$th bin, $X_k\prime$, is given by
+
+\begin{equation}
+X_k\prime = \frac{c_k\prime-1}{c_k\prime}X_k + \frac{1}{c_k\prime}X_{k-1}
+\label{avgShiftReg}
+\end{equation}
+
+\noindent where $X_k$ is the value of the $k$th bin.
+
+To evaluate the Grunwald integral using a partitioned history, we sum over the gamma function weights within each bin to obtain a characteristic weight for each bin. This can be done once as part of the start-up cost of the digital differ-integrator.  The Grunwald integral can be written
+
+\begin{equation}
+D^\alpha_tf(t) = \displaystyle \lim_{N\rightarrow\inf} \left(\frac{t}{N_t}\right)^{-\alpha}
+\displaystyle\sum\limits_{j=0}^{N_t-1} w_{j} f\left(t-\frac{j t}{N_t}\right)
+\label{simpleGrunwald}
+\end{equation}
+
+\noindent where 
+
+\begin{equation}
+w_{j} = \frac{\Gamma(j-\alpha)}{\Gamma(j+1)\Gamma(-\alpha)}
+\label{wj}
+\end{equation}
+
+To extend the Grunwald sum of Equation~\ref{simpleGrunwald}, we simply
+sum the coefficients within each bin. We define
+
+\begin{equation}
+W_k = \displaystyle\sum\limits_{bin} w_j
+\label{sumWk}
+\end{equation}
+
+\noindent where $w_j$ is summed over the historical time steps within the $k$th bin and
+
+\begin{equation}
+D^\alpha_t = \displaystyle(\Delta t)^{-\alpha}\sum\limits_{k=0}^{N_b}\bar{W}_kX_k
+\label{avgSimpleGrunwald}
+\end{equation}
+
+\noindent where $\Delta t$ is the interval between time samples. To handle bins that are partially full, we weight the binned Grunwald weights by the ratio of the bin occupation number to its capacity, 
+
+\begin{equation}
+\bar{W}_k= \frac{c_k W_k}{b_k}.
+\label{Wbar}
+\end{equation} 
+
+
+
+
+
+
+

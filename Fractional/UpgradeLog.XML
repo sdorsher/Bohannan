@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Fractional">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\GaryB\My Documents\StateSpace\StateSpace\Fractional.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\GaryB\My Documents\StateSpace\StateSpace\Fractional.suo">
+</Property><Property Name="Date" Value="Wednesday, September 30, 2009">
+</Property><Property Name="Time" Value="21:34 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Fractional.sln" Description="File successfully backed up as C:\Documents and Settings\GaryB\My Documents\StateSpace\StateSpace\Fractional.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Fractional.suo" Description="File successfully backed up as C:\Documents and Settings\GaryB\My Documents\StateSpace\StateSpace\Fractional.suo.old">
+</Event><Event ErrorLevel="0" Project="Fractional" Source="Fractional.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="Fractional" Source="Fractional.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="Fractional" Source="Fractional.vcproj" Description="Project file successfully backed up as 'C:\Documents and Settings\GaryB\My Documents\StateSpace\StateSpace\Fractional.vcproj.8.00.old'.">
+</Event><Event ErrorLevel="0" Project="Fractional" Source="Fractional.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="Fractional" Source="Fractional.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Fractional.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="Fractional.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amssymb, amsmath}
+\begin{document}
+
+\Section{Motivation} 
+
+In {\em Two direct Tustin discretization methods for fractional-order
+  differentiator/integrator}, Vinagre at al write that the discrete
+transfer function approximating fractional order control systems is
+given by their equation 11:
+
+\begin{eqnarray}
+D_{\pm r}(z)&= \frac{Y(z)}{F(z)} =\left(\frac{2}{T}\right)^{\pm r}
+CFE\left{\left(\frac{1-z^{-1}}{1+z^{-1}}\right)\right}_{p,q}\\
+&=\left(\frac{2}{T}\right)^{\pm r}\frac{P_p(z^{-1})}{Q_q(z^{-1})}
+\end{equation}
+
+\noindent The purpose of this note is to find the continued fraction
+expansion (CFE) and the corresponding polynomial ratio expression to
+the order $p=q$.
+
+\section{Continued fraction expansion}
+
+\noindent For our purposes, we can use the following expansion from
+page 107 of {\em Expansions of Certain Functions}, equation 2.13:
+
+\begin{equation}
+\left(\frac{x+1}{x-1}\right)^\nu = 1 + \frac{2\nu}{x-\nu+}
+\frac{\nu^2-1}{3x+}\frac{\nu^3-4}{5x+}\cdots\frac{\nu^2-n^2}{(2n+1)x+}\cdots
+\end{equation}
+
+\noindent Dividing both the top and the bottom by x and replacing
+$\nu\rightarrow\mp r$, we obtain
+
+\begin{equation}
+\left(\frac{1-z^{-1}}{1+z^{-1}}\right)^{\pm r} = 1 \mp \frac{2r}{x\pm r+}
+\frac{r^2-1}{3x+}\frac{r^2-4}{5x+}\cdots\frac{r^2-n^2}{(2n+1)x+}\cdots
+\label{eqn:CFE}
+\end{equation}
+
+
+\section{Continued fraction recursion relations}
+
+\noindent According to the {/em CRC Concise Encyclopedia of
+  Mathematics} by Eric Weisstein, a continued fraction of the form
+
+\begin{equation}
+x = b_0 + \frac{a_1}{b_1 + \frac{a_1} + {b_2 + \frac{a_3} {b_3 + \cdots}}}
+\label{eqn:continuedFrac}
+\end{equation}
+
+\noindent can be expressed as a polynomial quotient $\frac{P_n}{Q_n}$
+when it is truncated at the $n$th index. $P_n$ and $Q_n$ can be
+obtained from the following recursion relations:
+
+\begin{eqnarray}
+P_{-1}=1 \\
+Q_{-1}=0\\
+P_0=b_0\\
+Q_0=1\\
+P_j=b_jP_{j-1}+a_jP_{j-2}\\
+Q_j=b_jQ_{j-1}+a_jQ_{j-2}
+\end{eqnarray}
+
+\section{Using the recursion relations}
+
+We can 

@@ -1,0 +1,540 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Fractional.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Fractional.ico"
+IDR_FRACTITYPE          ICON                    "res\\FracDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_OPERATION_SETUP
+    BUTTON      ID_OPERATION_RUN
+    SEPARATOR
+    BUTTON      ID_OPERATIONS_MEASUREMENTSETUP
+    BUTTON      ID_OPERATIONS_MEASURE
+    BUTTON      ID_POWERSPECTRUM
+    SEPARATOR
+    BUTTON      ID_VIEW_PAGE
+    SEPARATOR
+    BUTTON      ID_TIMEVIEW
+    BUTTON      ID_HYSTERESISVIEW
+    BUTTON      ID_FREQUENCYVIEW
+    SEPARATOR
+    BUTTON      ID_ZOOMIN
+    BUTTON      ID_ZOOMOUT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Save &Time Series\tCtrl+T",   ID_FILE_SAVETIMESERIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Operations"
+    BEGIN
+        MENUITEM "&Set up",                     ID_OPERATION_SETUP
+        MENUITEM "&Run",                        ID_OPERATION_RUN
+        MENUITEM "Measurement Setup",           ID_OPERATIONS_MEASUREMENTSETUP
+        MENUITEM "Measure Permittivity",        ID_OPERATIONS_MEASURE
+        MENUITEM "Measure Power Spectrum",      ID_POWERSPECTRUM
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Page Select",                 ID_VIEW_PAGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Fractional...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_ZOOMIN,              VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_LEFT,                VIRTKEY, NOINVERT
+    VK_NEXT,        ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_PREV_PANE,           VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_RIGHT,               VIRTKEY, NOINVERT
+    VK_UP,          ID_ZOOMOUT,             VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 217, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Fractional"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Fractional Calculus using \nDirect Integration \nVersion 3.0 \nCase II",IDC_STATIC,49,16,105,38,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,49,63,119,8
+    DEFPUSHBUTTON   "OK",IDOK,162,23,32,14,WS_GROUP
+END
+
+IDD_PARAMETERS DIALOGEX 0, 0, 473, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,395,143,50,14
+    EDITTEXT        IDC_DURATION,418,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_INTERVALS,418,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLD_AMPL,258,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FREQUENCY,258,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STEP_AMPL,258,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STEP_RATE,258,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P_ZERO,114,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPONENT1,114,37,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,327,143,50,14
+    LTEXT           "Time (Duration) (T)",IDC_STATIC,327,20,60,8
+    LTEXT           "Number of intervals (N)",IDC_STATIC,327,34,73,8
+    LTEXT           "Integral alpha",IDC_STATIC,18,42,60,8
+    LTEXT           "AC Field Amplitude",IDC_STATIC,173,33,60,8
+    LTEXT           "AC Field Frequency (Hz)",IDC_STATIC,173,49,77,8
+    GROUPBOX        "Applied External Field",IDC_STATIC,165,4,154,191
+    GROUPBOX        "Electronic Parameters",IDC_STATIC,6,4,154,130
+    GROUPBOX        "Simulation Control",IDC_STATIC,319,4,145,49
+    LTEXT           "Proportional Gain",IDC_STATIC,18,24,55,8
+    LTEXT           "dc step amplitude",IDC_STATIC,173,81,56,8
+    LTEXT           "dc step rate",IDC_STATIC,173,97,38,8
+    CONTROL         "ac field on",IDC_AC_ON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,17,49,10
+    CONTROL         "pulsed field on",IDC_PULSED_ON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,65,61,10
+    CONTROL         "Gated (Multiplied)",IDC_GATED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,230,143,71,10
+    GROUPBOX        "Noise Parameters",IDC_STATIC,319,62,145,72
+    CONTROL         "E Field",IDC_E_FLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,335,77,37,10
+    CONTROL         "Polarization",IDC_POLAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,399,77,52,10
+    LTEXT           "Noise exponent (order)",IDC_STATIC,327,98,72,8
+    LTEXT           "Noise Intensity (sigma)",IDC_STATIC,327,116,71,8
+    EDITTEXT        IDC_ORDER,418,95,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIGMA,417,113,40,14,ES_AUTOHSCROLL
+    LTEXT           "duty_cycle (%)",IDC_STATIC,173,113,46,8
+    EDITTEXT        IDC_DUTY_CYCLE,258,110,40,14,ES_AUTOHSCROLL
+    CONTROL         "Bipolar",IDC_BIPOLAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,141,37,10
+    EDITTEXT        IDC_EXPONENT2,114,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Integral Gain",IDC_STATIC,18,60,41,8
+    LTEXT           "Pulse Width",IDC_STATIC,171,164,39,8
+    EDITTEXT        IDC_WP,255,164,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPONENT3,114,75,40,14,ES_AUTOHSCROLL
+    LTEXT           "Integral tau",IDC_STATIC,18,78,36,8
+    EDITTEXT        IDC_FRICTION,114,94,40,14,ES_AUTOHSCROLL
+    LTEXT           "Friction",IDC_STATIC,18,96,24,8
+    LTEXT           "Sample Time",IDC_STATIC,18,114,42,8
+    EDITTEXT        IDC_TS,114,113,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Control Type",IDC_STATIC,6,137,160,58
+    CONTROL         "Analog",IDC_CONTROL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,153,38,10
+    CONTROL         "Digital",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,17,169,35,10
+END
+
+IDD_PAGE_SELECT DIALOGEX 0, 0, 332, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Selection"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Input Angle",IDC_PAGE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,26,19,52,10
+    CONTROL         "Theta",IDC_VFRACTOR,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,32,35,10
+    CONTROL         "Phi",IDC_CURRENT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,45,26,10
+    CONTROL         "Theta Dot",IDC_INTEGRAL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,58,48,10
+    CONTROL         "Phi dot",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,71,38,10
+    CONTROL         "Total Angle",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,84,52,10
+    CONTROL         "Drive",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,26,97,33,10
+    CONTROL         "Error",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,26,110,31,10
+    CONTROL         "Input PSD",IDC_SPECTRUM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,133,23,49,10
+    CONTROL         "Output PSD",IDC_FLDPSD,"Button",BS_AUTORADIOBUTTON,133,37,54,10
+    DEFPUSHBUTTON   "OK",IDOK,214,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,76,50,14
+    GROUPBOX        "Time Domain Plot",IDC_STATIC,7,7,108,136
+    GROUPBOX        "Power Spectrum Plot",IDC_STATIC,119,7,99,52
+    GROUPBOX        "Hysteresis Selection",IDC_STATIC,229,7,86,63
+    CONTROL         "I vs V",IDC_HYSTERESIS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,241,21,34,10
+    CONTROL         "Q vs V",IDC_QVSF,"Button",BS_AUTORADIOBUTTON,241,35,37,10
+    CONTROL         "Q vs Flux",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,241,49,45,10
+END
+
+IDD_MEASUREMENT DIALOG 0, 0, 142, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Permittivity Measurement"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,13,68,50,14
+    LTEXT           "delay time",IDC_STATIC,19,17,32,8
+    LTEXT           "capture time",IDC_STATIC,17,39,40,8
+    EDITTEXT        IDC_DELAY,75,15,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAPTURE,75,36,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Fractional MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Fractional"
+            VALUE "LegalCopyright", "Copyright (C) 1900"
+            VALUE "OriginalFilename", "Fractional.EXE"
+            VALUE "ProductName", "Fractional Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 466
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PAGE_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_MEASUREMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Fractional\n\nFractional\nSim Parameters (*.frc)\n.frc\nFractional.Simulation\nFractional Simulation"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Fractional"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_RUN             "Run the simulation"
+    ID_VIEW_SETUP           "Show set up dialog"
+    ID_VIEW_TIME            "Time plot"
+    ID_OPERATION_SETUP      "Show set up dialog"
+    ID_OPERATION_RUN        "Run the calculation"
+    ID_VIEW_TOGGLE          "Change the view"
+    ID_FILE_SAVETIMESERIES  "Save the time series data"
+    ID_VIEW_PAGE            "Select which function to plot"
+    ID_OPERATIONS_MEASUREMENT "Set delay and capture times"
+    ID_OPERATIONS_MEASUREMENTSETUP "Select delay and capture times"
+    ID_OPERATIONS_MEASURE   "Measure permittivity"
+END
+
+STRINGTABLE
+BEGIN
+    ID_POWERSPECTRUM        "Calculate the power spectrum"
+    ID_OPERATIONS_MEASUREPOWERSPECTRUM "Measure power spectrum"
+    ID_TIMEVIEW             "Display time domain"
+    ID_FREQUENCYVIEW        "Display frequency domain"
+    ID_ZOOMOUT              "Contract the display by a factor of two"
+    ID_ZOOMIN               "Expand the time window by a factor of two"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Fractional.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

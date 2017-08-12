@@ -1,0 +1,45 @@
+@article{Bohannan:08,
+  author={Bohannan, G.},
+  title={Analog Fractional Order Controller in Temperature and Motor Control Applications},
+  journal={Journal of Vibration and Control},
+  volume={14(9-10)},
+  pages={1487--1498},
+  year={2008}
+}
+
+@article{Chen:04a,
+  author={Yang-Quan Chen and Blas M. Vinagre and Igor Podlubny},
+  title={Continued fraction expansion approaches to discretizing fractional order
+    derivatives -- an expository review},
+  journal={Nonlinear dynamics},
+  volume={38},
+  pages={155--170},
+  year={2004}
+}
+
+
+@book{Luo:13,
+  author={Ying Luo and Yang-Quan Chen},
+  title={Fractional Order Motion Controls},
+  year={2013},
+  publisher={John Wiley {\&} Sons},
+  address={Chichester, West Sussex}
+}
+
+@book{Monje:10,
+  author={Concepci{\'o}n A. Monje and YangQuan Chen and Blas M. Vinagre and Dingy\"{u}
+    Xue and Vicente Feliu},
+  title={Fractional-order Systems and Controls: Fundamentals and Applications,
+    {\rm{a monograph in the}} Advances in Industrial Control \rm{Series}},
+  publisher={Springer},
+  address={Berlin},
+  year={2010}
+}
+
+@book{OldSpan:74,
+  author={Oldham, K. and Spanier, J.},
+  title={The Fractional Calculus},
+  address={New York},
+  publisher={Academic Press},
+  year={1974}
+}

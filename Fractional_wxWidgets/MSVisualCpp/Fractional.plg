@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Fractional - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\GaryB\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /MD /W3 /GX /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/Fractional.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\GaryB\My Documents\StateSpace\FracView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\GaryB\LOCALS~1\Temp\RSP26.tmp" 
+Creating temporary file "C:\DOCUME~1\GaryB\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Fractional.pdb" /machine:I386 /out:"Release/Fractional.exe" 
+".\Release\FracDoc.obj"
+".\Release\Fractional.obj"
+".\Release\FracView.obj"
+".\Release\MainFrm.obj"
+".\Release\Measurement.obj"
+".\Release\Noise.obj"
+".\Release\Nrutil.obj"
+".\Release\PageSelect.obj"
+".\Release\Param.obj"
+".\Release\StdAfx.obj"
+".\Release\Fractional.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\GaryB\LOCALS~1\Temp\RSP27.tmp"
+<h3>Output Window</h3>
+Compiling...
+FracView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Fractional.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

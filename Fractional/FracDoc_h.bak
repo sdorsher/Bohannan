@@ -1,0 +1,200 @@
+// FracDoc.h : interface of the CFracDoc class
+//
+/////////////////////////////////////////////////////////////////////////////
+// Part of the validation of the fractional order state
+//  space model using the numerical technique of El-Mesiry,
+//  etal. 
+//
+#if !defined(AFX_FRACDOC_H__4CE2D14A_F9E0_11D3_99CA_DFBA240B2162__INCLUDED_)
+#define AFX_FRACDOC_H__4CE2D14A_F9E0_11D3_99CA_DFBA240B2162__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+
+#include "math.h"
+#include "nrutil.h"
+#include "Param.h"
+#include "Measurement.h"
+#include "Noise.h"
+
+class FractOp : public CObject
+{
+public:
+	double multiplier;
+	double order;
+	FractOp();
+};
+
+class Fractance : public CObject
+{
+public:
+	CArray<double, double&> history;
+	int N;	// history length
+	Fractance();
+	~Fractance();
+	Fractance(UINT size);
+	double FractDeriv(UINT n, double order);
+	double PartSum(UINT n, double order);
+	double& operator [](int index);
+	void RemoveAll();
+	void SetSize(UINT size);
+};
+
+class CFracDoc : public CDocument
+{
+protected: // create from serialization only
+	CFracDoc();
+	DECLARE_DYNCREATE(CFracDoc)
+
+// Attributes
+protected:
+	CSize	m_sizeDoc;
+	CFracApp* app;
+	CNoise	prn;
+	double (CNoise::*fcn)();	//pointer to the right noise source
+	CParam	pDlg;
+	CMeasurement mDlg;
+
+public:
+// Version number to document method being use
+	CString Version;
+
+// value arrays and size information
+	FractOp    AMatrix[2][2]; // array of fractional order operators
+
+	Fractance	X[4];
+// The computational arrays
+	#define	VIN			X[0]
+	#define	VOUT		X[1]
+	#define	CURRENT		X[2]
+	#define INTEGRAL	X[3]
+
+	CArray<double, double&> TimeArray;
+	CArray<COMPLEX, COMPLEX&> ComplexData;
+	CArray<double, double&> FreqArray;
+	CArray<double, double&> PSDArray1;
+	CArray<double, double&> PSDArray2;
+	CArray<CTime, CTime&> TimeStampArray;
+
+	int nNumSamples;
+	int nNumPTSamples;
+	int nNumSPECSamples;
+
+	int		N;		// number of simulation time intervals
+	double	alpha;	// the fractional exponent
+	double	y0;		// initial polarization
+	double	epsilon[2]; // epsilon prime and double prime
+						// recovered from the simulation
+	double	tau;	// time scale
+	double  K;		// Base impedance
+	double  L;		// Inductance
+	double  RI;		// Circuit resistance
+	double	T;		// simulation duration
+	double  dt;		// time step
+
+	BOOL	ac_On;
+	double	VG;		// Input Amplitude
+	double	frequency; // frequency of applied field
+	double	omega;	// angular frequency of applied field
+	double	Period;	// E field oscillation period
+
+	double	order;
+	double  sigma;
+	BOOL	b_Efld_noise;
+	BOOL	b_Pol_noise;
+
+	BOOL	Pulsed_On;
+	double	step_frequency;
+	double	step_amplitude;
+	double	P_Period;
+	double	P_duty_cycle;
+	
+	BOOL	gated;	// use the pulsed signal to 
+					// gate the ac signal on and off
+
+	BOOL	bipolar;
+	double	PreFactor;	// (K/RI)*(dt/tau)^alpha
+	double  Multiplier;
+
+	BOOL	b_run;	// switch to indicate valid data available 
+					// for drawing in view.
+	BOOL	b_measured; // switch to indicate if the permittivity
+					// has been measured for this run
+	BOOL	b_In_Progress;
+	BOOL	b_newData;
+
+	double	delay;	// delay time for start of measurement
+	double	capture;	// length of time to capture for measurement
+	int		delay_index;
+	int		capture_index;
+
+// Process time tracking
+	CTime	StartTime;
+	CTime	EndTime;
+	CTimeSpan	ElapsedTime;
+	bool	bPauseFlag;
+	bool	bStopFlag;
+
+// Operations
+public:
+	CSize	GetDocSize() {return m_sizeDoc;}
+	void	ComputeSpectrum();
+	void	ResetSpectralData();
+
+private:
+	void	DeleteContents();
+	void	bailout();
+//	double	PartSum(CArray<double, double&>& x, int n, double q);
+//	double	FracDeriv(CArray<double, double&>& x, int n, double q);
+
+	CString mFileName;
+	CFileException	mfileException;
+	static char BASED_CODE szTimeFilter[];	
+	
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CFracDoc)
+	public:
+	virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CFracDoc();
+        
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+	void	InitDocument();
+    virtual BOOL OnOpenDocument(const char* pszPathName);
+	void	PumpMessages();
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CFracDoc)
+	afx_msg void OnOperationRun();
+	afx_msg void OnOperationSetup();
+	afx_msg void OnUpdateOperationSetup(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateOperationRun(CCmdUI* pCmdUI);
+	afx_msg void OnFileSavetimeseries();
+	afx_msg void OnUpdateFileSavetimeseries(CCmdUI* pCmdUI);
+	afx_msg void OnOperationsMeasurementSetUp();
+	afx_msg void OnUpdateOperationsMeasurementSetUp(CCmdUI* pCmdUI);
+	afx_msg void OnOperationsMeasure();
+	afx_msg void OnUpdateOperationsMeasure(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateFileNew(CCmdUI* pCmdUI);
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_FRACDOC_H__4CE2D14A_F9E0_11D3_99CA_DFBA240B2162__INCLUDED_)

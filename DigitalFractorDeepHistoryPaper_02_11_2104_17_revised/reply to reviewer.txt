@@ -1,0 +1,25 @@
+Thank you for your comments. We appreciated your feedback, especially the helpful suggestion about the time axis of our figures one and two (which we have corrected). We also appreciate the typos caught and corrected and the suggestion that figures 3-8 needed more explanation in certain respects. All figures have been recaptioned.
+
+Some specific replies:
+
+
+"Firstly, how does the author control the duration of bins and how does the bin relate with input frequency and so on?"
+
+We have defined the binning structures used by inserting a bin capacity column in Table 1, recaptioning figure 3 to explain binning strategy definitions, and clarified the scaling relation between frequency and bin duration by improving the caption to Figure 1. 
+
+"Second, how the information data been transferred from one bin to another?"
+
+We have recaptioned Figure 2 and made it more clear that the average input signal history and the bin value are the same thing. Updating the average input signal history (the bin value) by transfering data from one bin to another is done through a weighted average, as discussed in section 2.2.
+
+"The advantage of this method compared with other ones are not demonstrated enough."
+
+Thank you for the suggestion than we compare our model to other models. In the course of updating our literature review, we have noticed a paper (reference 6) that demonstrates that currently the continued fraction expansion infinite impulse response (IIR) algorithm is a typical example of the popular class of IIR algorithms, rather than the one with the broadest bandwidth. We have modified our claims to reflect this fact. 
+
+Additionally, we have added a brief comparison to non-IIR models in the conclusion discussing the benefits of our model for the purpose of use in mcu's. The substantial improvement in bandwidth of our method is important for control in nonlinear systems. For use in a mcu, computing cost that remains constant in time is essential. No currently published method has demonstrated both advantages to our knowledge. 
+
+
+"What is the second plot for in Figure 3."
+The zoomed in view of the zero crossings allow us to measure relative phase. We use this comparison with our sinusoidal fitting reconstruction algorithm for verification purproses. 
+
+"What are the purpose of Figure 4-8? They need more explanations."
+These figures demonstrate the two to three decades of improved bandwidth over the IIR method achieved by our algorithm. They also demonstrate that the exponential binning strategy is preferred. Twenty registers achieves a greater improved bandwidth than 10 registers, but even 10 registers of memory is sufficient to beat the IIR method. 

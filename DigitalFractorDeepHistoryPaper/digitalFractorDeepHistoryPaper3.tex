@@ -1,0 +1,160 @@
+ \documentclass[twoside,reqno,11pt]{article}
+
+ \usepackage{algorithm,algorithmic} 
+
+% to have 2-digits numbering for equation, use:
+ \def\theequation{\arabic{section}.\arabic{equation}}
+
+  \setcounter{page}{1}
+  \thispagestyle{empty}
+
+%%%%%%%%%%%%%%% begin make title %%%%%%%%%%%%%%
+
+ %%% TITLE: texts in [.] is abbreviated (1st line) title for running heads
+ %%% Author(s): put in brackets [.] the short author's name
+
+ \title{AN EFFICIENT DEEP MEMORY ALGORITHM FOR COMPUTING FRACTIONAL ORDER OPERATORS} 
+ \author{Steven Dorsher $^1$, Gary Bohannan $^2$, Chad Bohannan $^3$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    % THE BEGINNING %
+ \begin{document}
+
+\maketitle
+
+%%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{abstract}
+
+This paper outlines a method to achieve effective bandwidth of five or
+more decades in the approximation of a fractional order
+derivative. This constitutes an increase of two decades or more over
+current algorithms, such the Infinite Impulse Response (IIR) method
+based on continued fraction expansion, while demanding only slightly
+more computational steps and processor memory.
+
+ \medskip
+
+%{\bf Do these sound right? Same with the keywords I chose below}
+%{\it MSC 2010\/}: Primary 65Y02: Secondary 65Z02, 65Y04, 65Z04
+
+ \smallskip
+
+{\it Key Words and Phrases}: digital fractors, memory kernel,
+fractional calculus, numerical methods, computational efficiency
+
+\end{abstract}
+
+
+%%%%%%% end make title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \vspace*{-16pt}
+
+%%%%%%%% begin papers' body %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}\label{sec:intro}
+\setcounter{section}{1}
+\setcounter{equation}{0}
+\input{Introduction.tex}
+
+
+\paragraph{Outline\\}
+We will first briefly describe the current state of the art in
+fractional order operator approximation and then describe a novel
+approach based on successive binning of older data.
+
+\begin{itemize} 
+\item Section~\ref{sec:algorithmDefn} will contain algorithm definitions. 
+\item Section~\ref{sec:bode} will contain the amplitude and phase response
+  of these algorithms for a large and small number of bins in the
+  partition.
+\item Section~\ref{sec:computation} will contain an analysis of the
+  computational resources required for the larger versus the smaller
+  number of memory registers stored.
+\end{itemize}
+
+%%%%%%%%%%%
+
+\section{Algorithm definitions}\label{sec:algorithmDefn}
+\setcounter{section}{2}
+\setcounter{equation}{0}
+
+\vspace{-12pt}
+\subsection{Partitioning the Grunwald history into averaged bins}\label{subsec:avgShift}
+\input{avgShiftAlgorithm7}
+
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Amplitude and phase characteristics}\label{sec:bode}
+\setcounter{section}{3}
+\setcounter{equation}{0}
+
+%%%%%%%%%%%%
+
+\section{Analysis of computational resources}\label{sec:computation}
+\setcounter{section}{4}
+\setcounter{equation}{0}
+
+The computational efficiency of each algorithm concerns both the
+memory used by the algorithm and the number of computational steps
+required for the algorithm to execute, which is a measure of the
+speed. To characterize the operational efficiency of a digital fractor
+operating as a circuit element in real time, the quantities of
+interest are the memory or number of processor steps {/em per time
+  step}.
+
+\vspace{-12pt}
+\subsection{The average Grunwald algorithm}
+\input{ComputationalAnalysis2.tex}
+
+%%%%%%%%%%%%%%%%
+
+\section{Conclusions}\label{conclusions}
+\setcounter{section}{5}
+\setcounter{equation}{0}
+
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+
+The author thanks his institution for the support, under Grant No
+...
+
+%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% arranged in ALPHABETIC ORDER of Authors' Families
+
+\include{FCAAbib}
+
+
+%%%%%%%%%% put authors' addresses here, in \it %%%%%%%%%%%%
+
+\bigskip \smallskip
+
+
+\it
+% (First) Author's full postal address
+$^1$ Department of Physics \\
+St Cloud State University \\
+mailing address: 3152 Blackheath Drive \\
+Saint Cloud, MN 56301, USA \\ [4pt]
+email: sdorsher@gmail.com
+
+\hfill Recieved: ???
+
+%Second author's address
+$^2$ Department of Physics\\
+Saint Cloud State University\\
+720 4th Avenue South\\
+Saint Cloud, MN 56301, USA\\ [4pt]
+email: gwbohannan@stcloudstate.edu
+
+%Third author's address
+$^3$ Chad Bohannan \\
+email: chad.bohannan@gmail.com
+
+
+\end{document} %%%%%%%%%%%%%%%%%%%%%%%%%
+
